@@ -128,7 +128,7 @@ def build_home(lang):
     li = {"nl": 0, "en": 1, "ru": 2}[lang]
     titles_q = {w["slug"]: w["title"] for w in WORK}
     in_w = {"nl": "in", "en": "in", "ru": "в"}[lang]
-    qs = [{"t": esc(q[li]), "s": f'{esc(q[3][li])} {in_w} <em>{esc(titles_q[q[4]])}</em>',
+    qs = [{"t": esc(q[li]), "n": esc(q[3][li]), "p": esc(titles_q[q[4]]),
            "u": f'{root}{prefix(lang)}werk/{q[4]}.html'} for q in QUOTES]
     qs_json = json.dumps(qs, ensure_ascii=False).replace("</", "<\\/")
     titles = {w["slug"]: w["title"] for w in WORK}
@@ -142,10 +142,10 @@ def build_home(lang):
   <figure class="home-img">{img_tag(HERO, root, "We zijn niet alleen", sizes="(max-width: 860px) 100vw, 40vw", eager=True)}
     <figcaption>{HERO_CAPTION[lang]}</figcaption></figure>
   <section class="home-lists">
-    <figure class="quote" aria-live="polite">
-      <blockquote class="lead">{qs[0]["t"]}</blockquote>
-      <figcaption class="lead-src">— <a href="{qs[0]["u"]}">{qs[0]["s"]}</a></figcaption>
-    </figure>
+    <div class="quote" aria-live="polite">
+      <a class="who" href="{qs[0]["u"]}"><span class="n">{qs[0]["n"]}</span><span class="p">{qs[0]["p"]}</span></a>
+      <p class="line">{qs[0]["t"]}</p>
+    </div>
     <h2>{u['binnenkort']}</h2>
     <ul class="mini">{''.join(row(w) for w in up)}</ul>
     <h2>{u['recent']}</h2>

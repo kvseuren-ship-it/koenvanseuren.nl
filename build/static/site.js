@@ -53,8 +53,9 @@
       var q = Qs[order[qi]];
       qBox.classList.add('fade');
       setTimeout(function () {
-        qBox.querySelector('blockquote').innerHTML = q.t;
-        var a = qBox.querySelector('figcaption a'); a.innerHTML = q.s; a.href = q.u;
+        qBox.querySelector('.line').innerHTML = q.t;
+        var a = qBox.querySelector('.who'); a.href = q.u;
+        a.querySelector('.n').innerHTML = q.n; a.querySelector('.p').innerHTML = q.p;
         qBox.classList.remove('fade');
       }, 700);
     }, 9000);
