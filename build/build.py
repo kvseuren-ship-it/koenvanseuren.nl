@@ -126,7 +126,8 @@ def build_home(lang):
                 f'<span class="t">{esc(w["title"])}</span> <span class="m">{esc(w["maker"][lang])}</span></a></li>')
     lead = HOME_LEAD[lang]
     titles = {w["slug"]: w["title"] for w in WORK}
-    pool = [[k, w["slug"], w["title"]] for w in WORK for k in ([w["poster"]] if w.get("poster") else []) + w["imgs"]]
+    pool = [[k, w["slug"], w["title"]] for w in WORK
+            for k in (([w["poster"]] if w.get("poster") else []) + w["imgs"])[:POOL_LIMIT.get(w["slug"], 99)]]
     pool_json = json.dumps(pool, ensure_ascii=False).replace("</", "<\\/")
     mosaic = "".join(f'<a data-k="{k}" class="{"poster" if k.startswith("poster") else "scene"}" href="{root}{prefix(lang)}werk/{sl}.html" title="{esc(titles[sl])}">'
                      f'{img_tag(k, root, titles[sl], sizes="(max-width: 520px) 50vw, (max-width: 860px) 33vw, 17vw", zoom=False)}</a>' for k, sl in MOSAIC)

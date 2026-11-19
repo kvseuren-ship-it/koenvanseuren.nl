@@ -362,3 +362,6 @@ HOME_LEAD = {
 "en": "In the play called life, 99.9 per cent of people have a supporting role. And yet we all dream of playing the lead.",
 "ru": "В пьесе под названием «жизнь» 99,9 процента людей играют второстепенные роли. И всё же все мы мечтаем о главной.",
 }
+
+# Hoeveel beelden per productie maximaal meedoen in de wisselende rij op home
+POOL_LIMIT = {"bosch-parade-2026": 2, "bosch-parade-2024": 1}
