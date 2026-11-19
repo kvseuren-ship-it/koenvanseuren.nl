@@ -29,6 +29,16 @@ M.update({
  'makers':'akig/ak-01.jpg','makers-2':'akig/ak-76.jpg',
 })
 
+
+M.update({
+ 'bp26-1':'bp/b02_LR-260618_2142_DeBoschParade_WillekeMachiels_AD2A1301_WM.jpg','bp26-2':'bp/b14_068_BWC2560-2.jpg','bp26-3':'bp/b08_039_BWC9291-1.jpg',
+ 'bp26-4':'bp/b06_033_BWC9287.jpg','bp26-5':'bp/b12_061_BWC9325.jpg','bp26-6':'bp/b15_070_BWC2572-scaled.jpg','bp26-7':'bp/b16_073_BWC2626-1-scaled.jpg',
+ 'bp26-8':'bp/b18_090_BWC2727-1-scaled.jpg','bp26-9':'bp/b11_054_BWC2472-2-scaled.jpg','bp26-10':'bp/b03_LR-260618_2019_DeBoschParade_WillekeMachiels_AD2A0786_WM.jpg',
+ 'bp26-11':'bp/b07_038_BWC2386.jpg','bp26-12':'bp/b17_076_BWC2645.jpg',
+ 'bp24-1':'bp/b01_LR_BoschParade_WillekeMachiels_HR_064_AD2A5909.jpg',
+ 'poster-watw':'bp/w01_watw.jpg',
+})
+
 def run(out, only=None):
     os.makedirs(out,exist_ok=True); dims={}
     for k,v in M.items():
