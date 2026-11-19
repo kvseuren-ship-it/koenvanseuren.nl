@@ -1,0 +1,175 @@
+/* koenvanseuren.nl — rood, Courier, gestippeld. */
+@font-face{font-family:"Courier Prime";src:url(fonts/courier-prime-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2190-2199,U+2212,U+2215,U+2605,U+2706,U+260E}
+@font-face{font-family:"Courier Prime";src:url(fonts/courier-prime-ext-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Courier Prime";src:url(fonts/courier-prime-700.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Courier Prime";src:url(fonts/courier-prime-400i.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"PT Mono";src:url(fonts/pt-mono-cyr-400.woff2) format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+
+:root{
+  --red:#e00000;        /* tekst: genoeg contrast op wit */
+  --red-bright:#ff0000; /* lijnen, accenten */
+  --paper:#fff;
+  --pink:#ffe5e5;
+  --gap:clamp(14px,2.2vw,28px);
+  --font:"Courier Prime","PT Mono","Courier New",Courier,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--red);font:400 16px/1.5 var(--font);font-feature-settings:"kern"}
+@media (min-width:1400px){body{font-size:17px}}
+a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{background:var(--red-bright);color:var(--paper);text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px dashed var(--red-bright);outline-offset:3px}
+img{max-width:100%;height:auto;display:block}
+hr{border:0;border-top:1px dashed var(--red-bright);margin:var(--gap) 0}
+h1,h2,h3{font-weight:700;line-height:1.1;margin:0}
+h2{font-size:1rem;text-transform:lowercase;letter-spacing:.02em;margin:2.2em 0 .7em}
+h2::before{content:"— "}
+em{font-style:italic}
+::selection{background:var(--red-bright);color:#fff}
+.skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;background:#fff;padding:6px;z-index:10}
+
+/* duotoon: donker = rood, licht = wit. Kleur bij hover. */
+img.duo{filter:url(#duo);transition:filter .5s ease}
+@media (hover:hover){a:hover img.duo, figure:hover > img.duo{filter:none}}
+a:hover:has(img){background:none}
+
+/* ---------- kop */
+.top{padding:22px var(--gap) 0}
+.top nav a{justify-self:start}
+.top nav{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);padding-bottom:22px;border-bottom:1px dashed var(--red-bright)}
+.top nav a[aria-current]{background:var(--red-bright);color:#fff;text-decoration:none}
+.top .name{white-space:nowrap}
+
+/* ---------- raster: inhoud + infopaneel */
+.wrap{display:grid;grid-template-columns:3fr 1fr;gap:var(--gap);padding:var(--gap)}
+main{min-width:0}
+.info{position:sticky;top:var(--gap);align-self:start;font-size:.95em}
+.info .portrait{display:block;max-width:240px}
+.info hr{margin:18px 0}
+.info ul{list-style:none;margin:0 0 1em;padding:0}
+.info .links{padding-left:2.2em}
+.info .tel{padding-left:2.2em;margin:0 0 1.2em}
+.info .langs,.info > p:last-child{padding-left:2.2em}
+.info .langs a[aria-current]{text-decoration:none;font-weight:700}
+
+/* ---------- home */
+.hero{position:relative;aspect-ratio:4/3;max-height:78vh;width:100%;overflow:hidden}
+.hero .slide{position:absolute;inset:0;margin:0;opacity:0;transition:opacity 1.4s ease}
+.hero .slide.on{opacity:1}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.home-lists{max-width:46em}
+.lead{font-size:1.15em;margin:1.6em 0 0;max-width:36em}
+ul.mini{list-style:none;margin:0;padding:0}
+ul.mini li{border-bottom:1px dashed var(--red-bright)}
+ul.mini a{display:grid;grid-template-columns:4.2em 1fr;gap:0 1em;padding:.5em 0;text-decoration:none}
+ul.mini .t{font-weight:700}
+ul.mini .m{grid-column:2;font-size:.85em}
+.more{display:inline-block;margin-top:1.2em}
+
+/* home: foto links, tekst rechts */
+.home{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:calc(var(--gap)*1.4);align-items:start}
+.home-img{margin:0}
+.home-img img{width:100%;max-height:calc(100vh - 150px);object-fit:cover;object-position:50% 30%;cursor:zoom-in}
+.home-img figcaption{font-size:.78em;margin-top:.6em}
+.home .lead{font-size:clamp(1.35rem,2.4vw,2.1rem);line-height:1.2;font-weight:700;margin:0 0 .6em;letter-spacing:-.01em}
+/* over: beeld + feiten links, eigen woorden rechts */
+.over{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);grid-template-areas:"img own" "facts own";grid-template-rows:auto 1fr;column-gap:calc(var(--gap)*2);align-items:start}
+.over-img{margin:0;grid-area:img}
+.over .own{grid-area:own}
+.over-facts{grid-area:facts}
+.over-img img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 35%;cursor:zoom-in}
+.over-img figcaption{font-size:.78em;margin-top:.6em}
+.over-facts{font-size:.86em;line-height:1.5;margin-top:1.6em;padding-top:1em;border-top:1px solid var(--red-bright)}
+.over-facts p{margin:0 0 .8em}
+.own{max-width:34em;padding-top:.2em}
+.own p{font-size:1.06em;line-height:1.55;margin:0 0 1.15em}
+.own p:first-child{font-size:clamp(1.3rem,2.2vw,1.9rem);line-height:1.22;font-weight:700;letter-spacing:-.01em;margin-bottom:1em}
+.own p:last-child{font-style:italic;margin-top:1.6em}
+/* home: beeldenrij */
+.mosaic{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:calc(var(--gap)*.6);margin-top:calc(var(--gap)*2.2)}
+.mosaic a{display:block;overflow:hidden;transition:opacity .6s}
+.mosaic a.fade{opacity:0}
+.mosaic img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;transition:transform .4s}
+.mosaic a:hover img{transform:scale(1.03)}
+/* productie: poster */
+.facts .poster{margin:0 0 1.6em}
+.facts .poster img{width:100%;cursor:zoom-in}
+
+/* ---------- werk */
+.pagetitle{font-size:clamp(2.2rem,6vw,4.6rem);letter-spacing:-.02em;margin:.1em 0 .3em}
+.note{font-size:.9em;max-width:40em}
+.worklist{list-style:none;margin:1.5em 0 0;padding:0;border-top:1px dashed var(--red-bright)}
+.work{border-bottom:1px dashed var(--red-bright)}
+.work a{display:grid;grid-template-columns:4em 120px minmax(0,1fr) minmax(0,15em);gap:var(--gap);align-items:start;padding:14px 0;text-decoration:none}
+.work .th img,.work .noimg{width:120px;height:80px;object-fit:cover}
+.work .noimg{display:block;border:1px dashed var(--red-bright)}
+.work strong{display:block;font-size:1.25em;line-height:1.15}
+.work .m{display:block;font-size:.85em;margin-top:.3em}
+.work .status{display:inline-block;font-size:.8em;margin-top:.5em;background:var(--red-bright);color:#fff;padding:0 .4em}
+.work .r{font-size:.85em}
+.work a:hover{background:var(--pink);color:var(--red)}
+
+/* ---------- productie */
+.prod h1{font-size:clamp(2rem,5.4vw,4.2rem);letter-spacing:-.02em;margin:.2em 0 .25em;hyphens:auto}
+.back{margin:0;font-size:.9em}
+.meta{margin:0 0 var(--gap)}
+.meta .role{font-size:.9em}
+.prod-hero{margin:0 0 var(--gap)}
+.prod-hero img{width:100%;max-height:80vh;object-fit:cover;object-position:50% 30%;cursor:zoom-in}
+.cols{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:calc(var(--gap)*1.6)}
+.text p{margin:0 0 1em;max-width:38em}
+.text p:first-child{font-size:1.12em}
+blockquote{margin:1.6em 0;padding:0 0 0 1em;border-left:3px solid var(--red-bright)}
+blockquote p{font-style:italic;font-size:1.25em;line-height:1.3;margin:0}
+blockquote footer{font-size:.85em;margin-top:.4em}
+.facts h2:first-child{margin-top:0}
+.facts dl{display:grid;grid-template-columns:minmax(6em,auto) 1fr;gap:.25em 1em;margin:0;font-size:.9em}
+.facts dt{font-style:italic}
+.facts dd{margin:0}
+.dates{list-style:none;padding:0;margin:0;font-size:.9em}
+.dates li{padding:.3em 0;border-bottom:1px dashed var(--red-bright)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--gap);margin-top:calc(var(--gap)*1.5)}
+.gallery figure{margin:0}
+.gallery img{width:100%;aspect-ratio:3/2;object-fit:cover;cursor:zoom-in}
+.photo-credit{font-size:.8em;margin-top:1.4em}
+.pn{display:flex;justify-content:space-between;gap:1em;margin-top:3em;padding-top:1em;border-top:1px dashed var(--red-bright);font-size:.9em}
+
+/* ---------- over / agenda */
+.bio{max-width:40em}
+.bio p:first-child{font-size:1.12em}
+.also{font-size:.92em}
+.agenda{list-style:none;padding:0;margin:0;max-width:46em}
+.agenda li{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:1em;padding:.5em 0;border-bottom:1px dashed var(--red-bright)}
+
+/* ---------- lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(255,255,255,.97);display:flex;align-items:center;justify-content:center;z-index:20;padding:4vmin}
+.lightbox[hidden]{display:none}
+.lightbox img{max-width:100%;max-height:100%;object-fit:contain}
+.lightbox button{position:absolute;top:10px;right:16px;font:700 2.4rem/1 var(--font);color:var(--red);background:none;border:0;cursor:pointer}
+
+/* ---------- mobiel */
+@media (max-width:860px){
+  .wrap{grid-template-columns:1fr}
+  .info{position:static;display:grid;grid-template-columns:120px 1fr;gap:0 var(--gap);border-top:1px dashed var(--red-bright);padding-top:var(--gap)}
+  .info hr{display:none}
+  .info .portrait{grid-row:span 4}
+  .info .links,.info .tel,.info .langs,.info > p:last-child{padding-left:0}
+  .cols{grid-template-columns:1fr}
+  .home{grid-template-columns:1fr}
+  .over{grid-template-columns:1fr;grid-template-areas:"img" "own" "facts";grid-template-rows:auto}
+  .own{margin-top:1.6em}
+  .mosaic{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .work a{grid-template-columns:3.4em 84px minmax(0,1fr)}
+  .work .th img,.work .noimg{width:84px;height:56px}
+  .work .r{grid-column:3}
+  .hero{aspect-ratio:4/5}
+}
+@media (max-width:520px){
+  .mosaic{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .top nav{grid-template-columns:repeat(3,auto);justify-content:space-between}
+  .top .name{grid-column:1/-1;order:-1;font-weight:700}
+  ul.mini a{grid-template-columns:3.6em 1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.info,.top,.lightbox,.hero{display:none}img.duo{filter:none}}

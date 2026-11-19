@@ -1,0 +1,13 @@
+# De site staat al gebouwd in /site; Netlify hoeft niets te bouwen.
+[build]
+  publish = "site"
+  command = ""
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
