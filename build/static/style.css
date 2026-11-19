@@ -72,12 +72,13 @@ ul.mini .m{grid-column:2;font-size:.85em}
 .home-img{margin:0}
 .home-img img{width:100%;max-height:calc(100vh - 150px);object-fit:cover;object-position:50% 30%;cursor:zoom-in}
 .home-img figcaption{font-size:.78em;margin-top:.6em}
-.home .quote{display:grid;grid-template-columns:8.5em minmax(0,1fr);column-gap:1.2em;align-items:start;margin:0 0 1.6em;min-height:calc(clamp(1.1rem,1.75vw,1.5rem)*1.35*7);transition:opacity .7s;font-size:1rem}
+.home .quote{display:grid;grid-template-columns:8.5em minmax(0,1fr);column-gap:1.2em;align-items:start;margin:0 0 1.6em;min-height:max(calc(clamp(1.1rem,1.75vw,1.5rem)*1.35*7),15rem);transition:opacity .7s;font-size:1rem}
 .home .quote.fade{opacity:0}
 .home .quote .who{text-decoration:none;color:inherit;padding-top:.15em}
 .home .quote .who .n{display:block;font-weight:700;text-transform:uppercase;letter-spacing:.02em}
 .home .quote .who .p{display:block;font-size:.72em;font-style:italic;margin-top:.3em;text-decoration:underline}
 .home .quote .line{margin:0;font-size:clamp(1.1rem,1.75vw,1.5rem);line-height:1.35;font-weight:400}
+.home .quote .line.long{font-size:clamp(.98rem,1.2vw,1.12rem);line-height:1.45}
 .home .lead{font-size:clamp(1.2rem,2.1vw,1.85rem);line-height:1.2;font-weight:700;margin:0 0 .6em;letter-spacing:-.01em}
 /* over: beeld + feiten links, eigen woorden rechts */
 .over{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);grid-template-areas:"img own" "facts own";grid-template-rows:auto 1fr;column-gap:calc(var(--gap)*2);align-items:start}

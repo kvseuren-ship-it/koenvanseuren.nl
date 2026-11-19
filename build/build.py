@@ -128,7 +128,7 @@ def build_home(lang):
     li = {"nl": 0, "en": 1, "ru": 2}[lang]
     titles_q = {w["slug"]: w["title"] for w in WORK}
     in_w = {"nl": "in", "en": "in", "ru": "в"}[lang]
-    qs = [{"t": esc(q[li]), "n": esc(q[3][li]), "p": esc(titles_q[q[4]]),
+    qs = [{"t": esc(q[li]), "n": esc(q[3][li]), "p": esc(titles_q[q[4]]), "l": len(q[li]) > 140,
            "u": f'{root}{prefix(lang)}werk/{q[4]}.html'} for q in QUOTES]
     qs_json = json.dumps(qs, ensure_ascii=False).replace("</", "<\\/")
     titles = {w["slug"]: w["title"] for w in WORK}
@@ -144,7 +144,7 @@ def build_home(lang):
   <section class="home-lists">
     <div class="quote" aria-live="polite">
       <a class="who" href="{qs[0]["u"]}"><span class="n">{qs[0]["n"]}</span><span class="p">{qs[0]["p"]}</span></a>
-      <p class="line">{qs[0]["t"]}</p>
+      <p class="line{" long" if qs[0]["l"] else ""}">{qs[0]["t"]}</p>
     </div>
     <h2>{u['binnenkort']}</h2>
     <ul class="mini">{''.join(row(w) for w in up)}</ul>

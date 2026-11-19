@@ -53,7 +53,7 @@
       var q = Qs[order[qi]];
       qBox.classList.add('fade');
       setTimeout(function () {
-        qBox.querySelector('.line').innerHTML = q.t;
+        var ln = qBox.querySelector('.line'); ln.innerHTML = q.t; ln.className = q.l ? 'line long' : 'line';
         var a = qBox.querySelector('.who'); a.href = q.u;
         a.querySelector('.n').innerHTML = q.n; a.querySelector('.p').innerHTML = q.p;
         qBox.classList.remove('fade');
