@@ -40,6 +40,26 @@
     setInterval(swap, 2200);
   }
 
+  // wisselende citaten op home
+  var qEl = document.getElementById('quotes'), qBox = document.querySelector('.quote');
+  if (qEl && qBox && !still) {
+    var Qs = JSON.parse(qEl.textContent), qi = 0;
+    var order = Qs.map(function (_, i) { return i; }).slice(1);
+    for (var k = order.length - 1; k > 0; k--) { var r = Math.floor(Math.random() * (k + 1)); var tmp = order[k]; order[k] = order[r]; order[r] = tmp; }
+    order.unshift(0);
+    setInterval(function () {
+      if (document.hidden) return;
+      qi = (qi + 1) % order.length;
+      var q = Qs[order[qi]];
+      qBox.classList.add('fade');
+      setTimeout(function () {
+        qBox.querySelector('blockquote').innerHTML = q.t;
+        var a = qBox.querySelector('figcaption a'); a.innerHTML = q.s; a.href = q.u;
+        qBox.classList.remove('fade');
+      }, 700);
+    }, 9000);
+  }
+
   var box = document.querySelector('.lightbox');
   if (!box) return;
   var big = box.querySelector('img');

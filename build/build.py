@@ -2,6 +2,7 @@
 """Bouwt koenvanseuren.nl als statische site in ../site  —  python3 build.py"""
 import json, os, shutil, html, re
 from content import *
+from quotes import Q as QUOTES
 
 SITE = "https://koenvanseuren.nl"
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "site")
@@ -124,7 +125,12 @@ def build_home(lang):
     def row(w):
         return (f'<li><a href="{root}{prefix(lang)}werk/{w["slug"]}.html"><span class="y">{w["year"]}</span> '
                 f'<span class="t">{esc(w["title"])}</span> <span class="m">{esc(w["maker"][lang])}</span></a></li>')
-    lead = HOME_LEAD[lang]
+    li = {"nl": 0, "en": 1, "ru": 2}[lang]
+    titles_q = {w["slug"]: w["title"] for w in WORK}
+    in_w = {"nl": "in", "en": "in", "ru": "в"}[lang]
+    qs = [{"t": esc(q[li]), "s": f'{esc(q[3][li])} {in_w} <em>{esc(titles_q[q[4]])}</em>',
+           "u": f'{root}{prefix(lang)}werk/{q[4]}.html'} for q in QUOTES]
+    qs_json = json.dumps(qs, ensure_ascii=False).replace("</", "<\\/")
     titles = {w["slug"]: w["title"] for w in WORK}
     pool = [[k, w["slug"], w["title"]] for w in WORK
             for k in (([w["poster"]] if w.get("poster") else []) + w["imgs"])[:POOL_LIMIT.get(w["slug"], 99)]]
@@ -136,8 +142,10 @@ def build_home(lang):
   <figure class="home-img">{img_tag(HERO, root, "We zijn niet alleen", sizes="(max-width: 860px) 100vw, 40vw", eager=True)}
     <figcaption>{HERO_CAPTION[lang]}</figcaption></figure>
   <section class="home-lists">
-    <p class="lead">{lead}</p>
-    <p class="lead-src">— <a href="{root}{prefix(lang)}werk/hamlet-versus-don-quixote.html">{HOME_LEAD_SRC[lang]}</a></p>
+    <figure class="quote" aria-live="polite">
+      <blockquote class="lead">{qs[0]["t"]}</blockquote>
+      <figcaption class="lead-src">— <a href="{qs[0]["u"]}">{qs[0]["s"]}</a></figcaption>
+    </figure>
     <h2>{u['binnenkort']}</h2>
     <ul class="mini">{''.join(row(w) for w in up)}</ul>
     <h2>{u['recent']}</h2>
@@ -146,7 +154,8 @@ def build_home(lang):
   </section>
 </div>
 <div class="mosaic" data-root="{root}{prefix(lang)}" data-img="{root}img/">{mosaic}</div>
-<script type="application/json" id="pool">{pool_json}</script>"""
+<script type="application/json" id="pool">{pool_json}</script>
+<script type="application/json" id="quotes">{qs_json}</script>"""
     return page(lang, depth, "index.html", "", body, og_img=HERO)
 
 def build_werk(lang):
