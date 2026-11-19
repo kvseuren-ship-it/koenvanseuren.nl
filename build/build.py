@@ -235,7 +235,7 @@ def build_agenda(lang):
     def row(w):
         a, b, pl = AGENDA[w["slug"]]
         pl = place(pl, lang) if pl else (w["status"][lang] if w.get("status") else "")
-        d = fmt(a, b, lang) + (f" · {pl}" if pl else "")
+        d = " · ".join(x for x in [fmt(a, b, lang) if a else "", pl] if x)
         return (f'<li><span class="d">{esc(d)}</span> '
                 f'<span class="w"><a href="{root}{prefix(lang)}werk/{w["slug"]}.html">{esc(w["title"])}</a>'
                 f'<span class="r">{esc(w["role"][lang])}</span></span></li>')

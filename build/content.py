@@ -122,6 +122,30 @@ WORK = [
  "quotes": [], "imgs": ["vvv-1"], "photo": "Antiklimax", "upcoming": True,
 },
 {
+ "slug": "a-storm-in-a-glass-of-water", "year": "2027", "title": "A Storm in a Glass of Water",
+ "maker": {"nl": "Het Zuidelijk Toneel · De Parade", "en": "Het Zuidelijk Toneel · De Parade", "ru": "Het Zuidelijk Toneel · De Parade"},
+ "role": {"nl": "tekst & regie", "en": "text & direction", "ru": "текст и режиссура"},
+ "status": {"nl": "in ontwikkeling · Short Summer Show, zomer 2027", "en": "in development · Short Summer Show, summer 2027", "ru": "в разработке · летний спектакль, лето 2027"},
+ "text": {
+  "nl": ["De Short Summer Show van Het Zuidelijk Toneel voor theaterfestival De Parade, zomer 2027. Tekst en regie: Koen van Seuren. Meer informatie volgt."],
+  "en": ["Het Zuidelijk Toneel's Short Summer Show for the touring theatre festival De Parade, summer 2027. Text and direction: Koen van Seuren. More information to follow."],
+  "ru": ["Летний спектакль Het Zuidelijk Toneel для фестиваля De Parade, лето 2027 года. Текст и режиссура: Кун ван Сёрен. Подробности позже."]},
+ "credits": [["tekst & regie", "Koen van Seuren"], ["productie", "Het Zuidelijk Toneel"]],
+ "quotes": [], "imgs": [], "photo": "", "upcoming": True,
+},
+{
+ "slug": "eenakter-toneelmakerij", "year": "—", "title": "Eenakter voor De Toneelmakerij",
+ "maker": {"nl": "De Toneelmakerij", "en": "De Toneelmakerij", "ru": "De Toneelmakerij"},
+ "role": {"nl": "tekst", "en": "text", "ru": "текст"},
+ "status": {"nl": "in ontwikkeling · titel volgt", "en": "in development · title to follow", "ru": "в разработке · название позже"},
+ "text": {
+  "nl": ["Een nieuwe eenakter, geschreven door Koen van Seuren voor De Toneelmakerij. Titel en speeldata volgen."],
+  "en": ["A new one-act play written by Koen van Seuren for De Toneelmakerij. Title and dates to follow."],
+  "ru": ["Новая одноактная пьеса, которую Кун ван Сёрен пишет для De Toneelmakerij. Название и даты позже."]},
+ "credits": [["tekst", "Koen van Seuren"], ["productie", "De Toneelmakerij"]],
+ "quotes": [], "imgs": [], "photo": "", "upcoming": True,
+},
+{
  "slug": "de-zelfmoordenaar", "year": "2026", "title": "De Zelfmoordenaar",
  "maker": {"nl": "Antiklimax i.s.m. De Noorderlingen", "en": "Antiklimax with De Noorderlingen", "ru": "Antiklimax и De Noorderlingen"},
  "role": {"nl": "tekst (Antiklimax)", "en": "text (Antiklimax)", "ru": "текст (Antiklimax)"},
@@ -317,7 +341,7 @@ CREDIT_LABELS = {
         "techniek": "technical", "productie": "production", "naar": "after", "tekst & regie": "text & direction", "licht": "lighting",
         "dramaturgie": "dramaturgy", "artistieke begeleiding": "artistic guidance", "foto's": "photography", "scenografie & kostuums": "set & costumes",
         "lichtontwerp": "lighting design", "productieleiding": "production manager", "coproductie": "co-production", "muziek": "music",
-        "tekstadvies": "text advice", "dramaturgisch advies": "dramaturgical advice", "tekstcoach": "text coach", "tekstbewerking": "adaptation",
+        "tekstadvies": "text advice", "dramaturgisch advies": "dramaturgical advice", "tekstcoach": "text coach", "tekstbewerking": "adaptation", "tekst": "text",
         "concept": "concept", "regie & tekst": "direction & text", "spel & tekst": "performers & text", "lichtontwerp (2020)": "lighting design (2020)",
         "concept & uitvoering": "concept & performance", "decor": "set", "eindregie": "final direction", "co-regie": "co-direction", "curator": "curator", "libretto": "libretto", "artistiek leider": "artistic director", "regieassistent": "assistant director"},
  "ru": {"concept & tekst": "концепция и текст", "regie": "режиссура", "spel": "в ролях", "kostuums": "костюмы", "vormgeving": "оформление",
@@ -325,7 +349,7 @@ CREDIT_LABELS = {
         "dramaturgie": "драматургия", "artistieke begeleiding": "художественный куратор", "foto's": "фото", "scenografie & kostuums": "сценография и костюмы",
         "lichtontwerp": "художник по свету", "productieleiding": "руководитель производства", "coproductie": "копродукция", "muziek": "музыка",
         "tekstadvies": "консультант по тексту", "dramaturgisch advies": "драматургический консультант", "tekstcoach": "педагог по тексту",
-        "tekstbewerking": "адаптация текста", "concept": "концепция", "regie & tekst": "режиссура и текст", "spel & tekst": "в ролях и текст",
+        "tekstbewerking": "адаптация текста", "tekst": "текст", "concept": "концепция", "regie & tekst": "режиссура и текст", "spel & tekst": "в ролях и текст",
         "lichtontwerp (2020)": "художник по свету (2020)", "concept & uitvoering": "концепция и исполнение", "decor": "декорации", "eindregie": "режиссура", "co-regie": "сорежиссура", "curator": "куратор", "libretto": "либретто", "artistiek leider": "художественный руководитель", "regieassistent": "ассистент режиссёра"},
 }
 
