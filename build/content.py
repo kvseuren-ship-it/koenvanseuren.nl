@@ -58,31 +58,39 @@ BIO = {
 ],
 }
 
-# Uitsluitend Koens eigen woorden, licht ingekort en aan elkaar gezet. Bronnen:
+# Uitsluitend Koens eigen woorden, licht ingekort; 'we' soms 'ik'. Bronnen:
+#  - projectplan VVV – Voor Volk en Vaderland (solo), Antiklimax 2026 (VVV)
+#  - aanvraag We zijn niet alleen, 2026 (WZNA)
 #  - interview 'Meet de Maker', Het Zuidelijk Toneel, 4 juli 2025 (HZT)
 #  - 'Blijf vooral thuis', De Noorderlingen, november 2026 (NRD)
-#  - Koens eigen tekst op antiklimax.nl, pagina Personae (PER)
+#  - Koens tekst op antiklimax.nl, pagina Personae (PER)
 BIO_QUOTE = {
 "nl": [
-"Ik maak geen theater over wie we zijn, maar over wat we geloven, waar we in vastzitten, en hoe we onszelf daarin verliezen.",  # HZT
-"Mijn personages zijn geen mensen in de psychologische zin van het woord; ze zijn dragers van ideeën, belichaamde ideologieën. Een personage is nooit puur een individu, maar wordt geconstrueerd uit de omgeving waarin het zich begeeft. In het toneelstuk dat het leven heet, speelt 99,9 procent van de mensen een bijrol. En toch dromen we er allemaal van de hoofdrol te spelen.",  # HZT
-"Ik word hoofdzakelijk geïnspireerd door repertoire van de westerse canon. Belangrijkste uitgangspunt is het fileren en filteren van de ideologie die achter het oorspronkelijke stuk verscholen ligt, en te kijken hoeveel van die ideeën nog terug te vinden zijn in de onze. Theater heeft pas impact als het schuurt met het hier en nu. Je bewijst een oude schrijver de grootste dienst door zijn tekst brutaal naar het heden te trekken.",  # PER + NRD
-"Humor is voor mij het beste smeermiddel om ‘serieuze’ vragen te onderzoeken. De lach werkt als een breekijzer: je laat het publiek keihard lachen zodat hun verdediging zakt, en precies op dat moment kun je ze emotioneel verrassen of aan het denken zetten. Ze moeten het gevoel hebben dat ze iets lichts meemaken, en pas later, bij het weglopen of het napraten, moet het besef komen: wacht even, dit ging ergens over. Ik noem dat subliminale filosofie.",  # NRD + HZT
-"We blijven allemaal mislukte mensen, met dromen die niet uitkomen en goede bedoelingen die tot kwade dingen leiden.",  # HZT
+"Ik vertel geen verhalen om te bevestigen, maar om te bevragen.",  # VVV
+"In het theater worden thema’s vaak psychologisch of poëtisch benaderd, maar zelden structureel en ideologisch. Mijn personages zijn geen mensen in de psychologische zin van het woord; ze zijn dragers van ideeën, belichaamde ideologieën. Een personage is nooit puur een individu, maar wordt geconstrueerd uit de omgeving waarin het zich begeeft.",  # VVV + HZT
+"Nationalisme, chauvinisme en in uiterste gevallen fascisme hebben geen louter psychologische aanleiding, maar vinden hun oorsprong in de penibele materiële situatie van aanvankelijk doodnormale mensen. De complotdenker is geen gevaarlijke gek, maar een uiting van vals klassenbewustzijn; de kanarie in de kolenmijn van een samenleving die verhardt.",  # VVV + WZNA
+"Onze verbeelding zit vast in de romantische orde. Romantiek maakt onze verlangens vermarktbaar – vrijheid is de aanschaf van een Range Rover, de ware liefde vind je door het juiste parfum te kopen – en tegelijkertijd blijft wat we werkelijk verlangen altijd onbereikbaar; waardoor we blijven consumeren, zonder dat de wereld om ons heen verandert of ons echt gelukkiger maakt.",  # VVV
+"Ik word hoofdzakelijk geïnspireerd door repertoire van de westerse canon. Belangrijkste uitgangspunt is het fileren en filteren van de ideologie die achter het oorspronkelijke stuk verscholen ligt, en te kijken hoeveel van die ideeën nog terug te vinden zijn in de onze. Je bewijst een oude schrijver de grootste dienst door zijn tekst brutaal naar het heden te trekken.",  # PER + NRD
+"Humor is voor mij het beste smeermiddel om ‘serieuze’ vragen te onderzoeken. De lach werkt als een breekijzer: je laat het publiek keihard lachen zodat hun verdediging zakt, en precies op dat moment kun je ze aan het denken zetten. Pas later, bij het weglopen of het napraten, moet het besef komen: wacht even, dit ging ergens over.",  # NRD + HZT
+"Waar de realiteit tekortschiet en een collectief verhaal mist om die pijn te duiden, neemt de overlevingsdrang van de fantasie het over.",  # WZNA
 ],
 "en": [
-"I don't make theatre about who we are, but about what we believe, what we are stuck in, and how we lose ourselves in it.",
-"My characters are not people in the psychological sense of the word; they are carriers of ideas, embodied ideologies. A character is never purely an individual, but is constructed from the environment it moves in. In the play called life, 99.9 per cent of people have a supporting role. And yet we all dream of playing the lead.",
-"I am mainly inspired by the repertoire of the Western canon. My starting point is to fillet and filter the ideology hidden behind the original play, and to see how much of it can still be found in ours. Theatre only has impact when it chafes against the here and now. You do an old writer the greatest service by dragging his text brazenly into the present.",
-"For me, humour is the best lubricant for examining ‘serious’ questions. Laughter works like a crowbar: you make the audience laugh out loud so their defences drop, and at exactly that moment you can surprise them emotionally or make them think. They should feel they are watching something light, and only later, walking out or talking it over, should the realisation come: hang on, this was about something. I call that subliminal philosophy.",
-"We all remain failures, with dreams that don't come true and good intentions that lead to bad things.",
+"I don't tell stories to confirm, but to question.",
+"In theatre, themes are often approached psychologically or poetically, but rarely structurally and ideologically. My characters are not people in the psychological sense of the word; they are carriers of ideas, embodied ideologies. A character is never purely an individual, but is constructed from the environment it moves in.",
+"Nationalism, chauvinism and, in extreme cases, fascism do not have merely psychological causes; they originate in the precarious material situation of initially perfectly ordinary people. The conspiracy theorist is not a dangerous lunatic but an expression of false class consciousness: the canary in the coal mine of a society that is hardening.",
+"Our imagination is stuck in the romantic order. Romanticism makes our desires marketable – freedom is buying a Range Rover, true love is found by buying the right perfume – while what we really desire always remains out of reach; so we keep consuming, without the world around us changing or making us any happier.",
+"I am mainly inspired by the repertoire of the Western canon. My starting point is to fillet and filter the ideology hidden behind the original play, and to see how much of it can still be found in ours. You do an old writer the greatest service by dragging his text brazenly into the present.",
+"For me, humour is the best lubricant for examining ‘serious’ questions. Laughter works like a crowbar: you make the audience laugh out loud so their defences drop, and at exactly that moment you can make them think. Only later, walking out or talking it over, should the realisation come: hang on, this was about something.",
+"Where reality falls short and a collective story is missing to make sense of that pain, the survival instinct of fantasy takes over.",
 ],
 "ru": [
-"Я делаю театр не о том, кто мы есть, а о том, во что мы верим, в чём мы застряли и как мы в этом себя теряем.",
-"Мои персонажи — не люди в психологическом смысле слова; они носители идей, воплощённые идеологии. Персонаж никогда не бывает просто индивидом — его конструирует среда, в которой он существует. В пьесе под названием «жизнь» 99,9 процента людей играют второстепенные роли. И всё же все мы мечтаем о главной.",
-"Прежде всего меня вдохновляет репертуар западного канона. Главное — вскрыть и процедить идеологию, спрятанную за оригинальной пьесой, и посмотреть, сколько её ещё осталось в нашей. Театр действует, только когда он царапает здесь и сейчас. Лучшая услуга старому автору — дерзко перетащить его текст в настоящее.",
-"Юмор для меня — лучшая смазка, чтобы исследовать «серьёзные» вопросы. Смех работает как лом: зрители хохочут, их защита падает, и именно в этот момент их можно эмоционально застать врасплох или заставить думать. Им должно казаться, что они смотрят что-то лёгкое, и лишь потом, по дороге домой или в разговоре, приходит понимание: постойте, это было о чём-то. Я называю это сублиминальной философией.",
-"Мы все остаёмся неудачниками — с мечтами, которые не сбываются, и благими намерениями, ведущими к дурному.",
+"Я рассказываю истории не чтобы подтверждать, а чтобы ставить под вопрос.",
+"В театре темы часто решаются психологически или поэтически, но редко структурно и идеологически. Мои персонажи — не люди в психологическом смысле слова; они носители идей, воплощённые идеологии. Персонаж никогда не бывает просто индивидом — его конструирует среда, в которой он существует.",
+"У национализма, шовинизма и в крайних случаях фашизма нет чисто психологических причин: они коренятся в бедственном материальном положении поначалу совершенно обычных людей. Конспиролог — не опасный безумец, а выражение ложного классового сознания: канарейка в угольной шахте ожесточающегося общества.",
+"Наше воображение застряло в романтическом порядке. Романтизм делает наши желания товаром — свобода есть покупка Range Rover, настоящая любовь находится с правильными духами, — а то, чего мы действительно хотим, остаётся недостижимым; и мы продолжаем потреблять, а мир вокруг не меняется и счастливее нас не делает.",
+"Прежде всего меня вдохновляет репертуар западного канона. Главное — вскрыть и процедить идеологию, спрятанную за оригинальной пьесой, и посмотреть, сколько её ещё осталось в нашей. Лучшая услуга старому автору — дерзко перетащить его текст в настоящее.",
+"Юмор для меня — лучшая смазка, чтобы исследовать «серьёзные» вопросы. Смех работает как лом: зрители хохочут, их защита падает, и именно в этот момент их можно заставить думать. Лишь потом, по дороге домой или в разговоре, приходит понимание: постойте, это было о чём-то.",
+"Там, где реальности не хватает и нет коллективного рассказа, чтобы осмыслить эту боль, за дело берётся инстинкт выживания — фантазия.",
 ],
 }
 
