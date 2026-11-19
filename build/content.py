@@ -60,6 +60,7 @@ BIO = {
 
 # Uitsluitend Koens eigen woorden, licht ingekort; 'we' soms 'ik'. Bronnen:
 #  - projectplan VVV – Voor Volk en Vaderland (solo), Antiklimax 2026 (VVV)
+#    (WZNA-passage: 'theorieën' → 'verhalen', omdat de context van complottheorieën hier ontbreekt)
 #  - aanvraag We zijn niet alleen, 2026 (WZNA)
 #  - interview 'Meet de Maker', Het Zuidelijk Toneel, 4 juli 2025 (HZT)
 #  - 'Blijf vooral thuis', De Noorderlingen, november 2026 (NRD)
@@ -68,7 +69,7 @@ BIO_QUOTE = {
 "nl": [
 "Ik vertel geen verhalen om te bevestigen, maar om te bevragen.",  # VVV
 "In het theater worden thema’s vaak psychologisch of poëtisch benaderd, maar zelden structureel en ideologisch. Mijn personages zijn geen mensen in de psychologische zin van het woord; ze zijn dragers van ideeën, belichaamde ideologieën. Een personage is nooit puur een individu, maar wordt geconstrueerd uit de omgeving waarin het zich begeeft.",  # VVV + HZT
-"Nationalisme, chauvinisme en in uiterste gevallen fascisme hebben geen louter psychologische aanleiding, maar vinden hun oorsprong in de penibele materiële situatie van aanvankelijk doodnormale mensen. De complotdenker is geen gevaarlijke gek, maar een uiting van vals klassenbewustzijn; de kanarie in de kolenmijn van een samenleving die verhardt.",  # VVV + WZNA
+"In een tijd waarin de kloof tussen arm en rijk groeit en het vertrouwen in instituties verdampt, is het logisch dat juist degenen die aan het kortste eind trekken fundamentele vragen stellen over de aard van het systeem. Bij gebrek aan een coherente ideologie die reëel verzet mogelijk maakt, zoeken mensen hun toevlucht tot verhalen die ontspringen aan een reëel fundament, klassenverschillen en onmacht, maar die vervolgens zo ver worden doorgevoerd dat ze het contact met de werkelijkheid verliezen.",  # WZNA
 "Onze verbeelding zit vast in de romantische orde. Romantiek maakt onze verlangens vermarktbaar – vrijheid is de aanschaf van een Range Rover, de ware liefde vind je door het juiste parfum te kopen – en tegelijkertijd blijft wat we werkelijk verlangen altijd onbereikbaar; waardoor we blijven consumeren, zonder dat de wereld om ons heen verandert of ons echt gelukkiger maakt.",  # VVV
 "Ik word hoofdzakelijk geïnspireerd door repertoire van de westerse canon. Belangrijkste uitgangspunt is het fileren en filteren van de ideologie die achter het oorspronkelijke stuk verscholen ligt, en te kijken hoeveel van die ideeën nog terug te vinden zijn in de onze. Je bewijst een oude schrijver de grootste dienst door zijn tekst brutaal naar het heden te trekken.",  # PER + NRD
 "Humor is voor mij het beste smeermiddel om ‘serieuze’ vragen te onderzoeken. De lach werkt als een breekijzer: je laat het publiek keihard lachen zodat hun verdediging zakt, en precies op dat moment kun je ze aan het denken zetten. Pas later, bij het weglopen of het napraten, moet het besef komen: wacht even, dit ging ergens over.",  # NRD + HZT
@@ -77,7 +78,7 @@ BIO_QUOTE = {
 "en": [
 "I don't tell stories to confirm, but to question.",
 "In theatre, themes are often approached psychologically or poetically, but rarely structurally and ideologically. My characters are not people in the psychological sense of the word; they are carriers of ideas, embodied ideologies. A character is never purely an individual, but is constructed from the environment it moves in.",
-"Nationalism, chauvinism and, in extreme cases, fascism do not have merely psychological causes; they originate in the precarious material situation of initially perfectly ordinary people. The conspiracy theorist is not a dangerous lunatic but an expression of false class consciousness: the canary in the coal mine of a society that is hardening.",
+"At a time when the gap between rich and poor is widening and trust in institutions is evaporating, it makes sense that precisely those who draw the short straw ask fundamental questions about the nature of the system. In the absence of a coherent ideology that makes real resistance possible, people take refuge in stories that spring from a real foundation, class differences and powerlessness, but are then pushed so far that they lose touch with reality.",
 "Our imagination is stuck in the romantic order. Romanticism makes our desires marketable – freedom is buying a Range Rover, true love is found by buying the right perfume – while what we really desire always remains out of reach; so we keep consuming, without the world around us changing or making us any happier.",
 "I am mainly inspired by the repertoire of the Western canon. My starting point is to fillet and filter the ideology hidden behind the original play, and to see how much of it can still be found in ours. You do an old writer the greatest service by dragging his text brazenly into the present.",
 "For me, humour is the best lubricant for examining ‘serious’ questions. Laughter works like a crowbar: you make the audience laugh out loud so their defences drop, and at exactly that moment you can make them think. Only later, walking out or talking it over, should the realisation come: hang on, this was about something.",
@@ -86,7 +87,7 @@ BIO_QUOTE = {
 "ru": [
 "Я рассказываю истории не чтобы подтверждать, а чтобы ставить под вопрос.",
 "В театре темы часто решаются психологически или поэтически, но редко структурно и идеологически. Мои персонажи — не люди в психологическом смысле слова; они носители идей, воплощённые идеологии. Персонаж никогда не бывает просто индивидом — его конструирует среда, в которой он существует.",
-"У национализма, шовинизма и в крайних случаях фашизма нет чисто психологических причин: они коренятся в бедственном материальном положении поначалу совершенно обычных людей. Конспиролог — не опасный безумец, а выражение ложного классового сознания: канарейка в угольной шахте ожесточающегося общества.",
+"Во времена, когда разрыв между бедными и богатыми растёт, а доверие к институтам испаряется, логично, что именно те, кому досталось меньше всех, задают фундаментальные вопросы о природе системы. За неимением цельной идеологии, которая сделала бы возможным реальное сопротивление, люди ищут убежища в историях, растущих из реальной почвы — классового неравенства и бессилия, — но доведённых до такой крайности, что они теряют связь с реальностью.",
 "Наше воображение застряло в романтическом порядке. Романтизм делает наши желания товаром — свобода есть покупка Range Rover, настоящая любовь находится с правильными духами, — а то, чего мы действительно хотим, остаётся недостижимым; и мы продолжаем потреблять, а мир вокруг не меняется и счастливее нас не делает.",
 "Прежде всего меня вдохновляет репертуар западного канона. Главное — вскрыть и процедить идеологию, спрятанную за оригинальной пьесой, и посмотреть, сколько её ещё осталось в нашей. Лучшая услуга старому автору — дерзко перетащить его текст в настоящее.",
 "Юмор для меня — лучшая смазка, чтобы исследовать «серьёзные» вопросы. Смех работает как лом: зрители хохочут, их защита падает, и именно в этот момент их можно заставить думать. Лишь потом, по дороге домой или в разговоре, приходит понимание: постойте, это было о чём-то.",
@@ -121,7 +122,7 @@ WORK = [
  "quotes": [], "dates": [], "imgs": ["vvv-1"], "photo": "Antiklimax", "upcoming": True,
 },
 {
- "slug": "de-zelf-moordenaar", "year": "2026", "title": "De Zelf-moordenaar",
+ "slug": "de-zelfmoordenaar", "year": "2026", "title": "De Zelfmoordenaar",
  "maker": {"nl": "Antiklimax i.s.m. De Noorderlingen", "en": "Antiklimax with De Noorderlingen", "ru": "Antiklimax и De Noorderlingen"},
  "role": {"nl": "tekst (Antiklimax)", "en": "text (Antiklimax)", "ru": "текст (Antiklimax)"},
  "text": {
@@ -250,7 +251,7 @@ WORK = [
  "credits": [["concept & tekst", "Antiklimax"], ["regie", "Koen van Seuren"], ["spel", "David Westera, Hélène Vrijdag, Emma Vermeulen"], ["scenografie & kostuums", "Caz Egelie"], ["muziek", "Aart Strootman"], ["dramaturgie", "Judith Blankenberg"], ["lichtontwerp", "Bogi Bakker"], ["tekstcoach", "Joachim Robbrecht"], ["coproductie", "Grand Theatre Groningen"], ["foto's", "Niels “Knelis” Meijer"]],
  "quotes": [["Een verrukkelijk, lichtvoetig theatersprookje.", "Peter van Strien, Dagblad van het Noorden ★★★★"]],
  "dates": ["04/05/2024 · première, Grand Theatre Groningen", "tournee 2024–2025 o.a. Theater Bellevue Amsterdam, Theater Kikker Utrecht, Theater Walhalla Rotterdam, Schuur Haarlem, Zaal 3 Den Haag, Verkadefabriek Den Bosch"],
- "imgs": ["atwh-1", "atwh-11", "atwh-4", "atwh-12", "atwh-5", "atwh-2", "atwh-6", "atwh-7", "atwh-8", "atwh-10", "atwh-3"], "poster": "poster-atwh", "photo": "Niels “Knelis” Meijer",
+ "imgs": ["atwh-1", "atwh-11", "atwh-4", "atwh-12", "atwh-5", "atwh-2", "atwh-6", "atwh-7", "atwh-10", "atwh-3"], "poster": "poster-atwh", "photo": "Niels “Knelis” Meijer",
 },
 {
  "slug": "funf-sechs-alles-flex", "poster": "poster-funf", "year": "2023", "title": "Fünf, sechs, alles Flex",
@@ -351,9 +352,9 @@ HERO_CAPTION = {"nl": "Luca Bötzel in <em>We zijn niet alleen</em>, De Parade 2
                 "ru": "Лука Бётцель в спектакле <em>We zijn niet alleen</em>, De Parade 2026 · фото Нильс «Кнелис» Мейер"}
 
 # Beeldenrij op de homepage (link naar productie)
-MOSAIC = [("poster-herzschmerz","herzschmerz"),("wzna-3","we-zijn-niet-alleen"),("atwh-4","as-the-world-hurts"),("poster-zelfmoordenaar","de-zelf-moordenaar"),
+MOSAIC = [("poster-herzschmerz","herzschmerz"),("wzna-3","we-zijn-niet-alleen"),("atwh-4","as-the-world-hurts"),("poster-zelfmoordenaar","de-zelfmoordenaar"),
           ("hamlet-7","hamlet-versus-don-quixote"),("revenge-2","revenge-of-the-extras"),("poster-peergynt","peer-gynt"),("herzschmerz-7","herzschmerz"),
-          ("poster-atwh","as-the-world-hurts"),("zelfmoordenaar-2","de-zelf-moordenaar"),("poster-hamlet","hamlet-versus-don-quixote"),("atwh-6","as-the-world-hurts")]
+          ("poster-atwh","as-the-world-hurts"),("zelfmoordenaar-2","de-zelfmoordenaar"),("poster-hamlet","hamlet-versus-don-quixote"),("atwh-6","as-the-world-hurts")]
 
 # Openingszin op home (Koen, HZT 2025)
 HOME_LEAD = {

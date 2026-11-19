@@ -22,7 +22,7 @@ M.update({
  'poster-peergynt':'grand/g13_peer-gynt.jpg','poster-hamlet':'grand/g10_nielsknelis-antiklimax-0439-_dsc4222.jpg','poster-atwh':'grand/g09_antiklimax-2023-nielsknelis-0038-dsc_2014.jpg',
  'poster-herzschmerz':'grand/g01_antiklimax_herzschmerz-nielsknelis-2.jpg','poster-funf':'grand/g15_funf.jpg','poster-revenge':'grand/g16_revenge.jpg','herzschmerz-11':'grand/g02_herzschmerz-antiklimax-nielsknelis-0113-dsc_2586.jpg','herzschmerz-12':'grand/g04_herzschmerz-beeld-liggend-1.png','atwh-11':'grand/g05_antiklimax-astheworldhurts-nielsknelis-0009-dsc_9096.jpg','atwh-12':'grand/g06_antiklimax-astheworldhurts-nielsknelis-0015-dsc_0899.jpg','poster-zelfmoordenaar':'akig/ak-02.jpg',
  'herzschmerz-7':'akig/ak-05.jpg','herzschmerz-8':'akig/ak-09.jpg',
- 'atwh-4':'akig/ak-39.jpg','atwh-5':'akig/ak-40.jpg','atwh-6':'akig/ak-41.jpg','atwh-7':'akig/ak-43.jpg','atwh-8':'akig/ak-46.jpg','atwh-10':'akig/ak-45.jpg',
+ 'atwh-4':'akig/ak-39.jpg','atwh-5':'akig/ak-40.jpg','atwh-6':'akig/ak-41.jpg','atwh-7':'akig/ak-43.jpg','atwh-10':'akig/ak-45.jpg',
  'hamlet-6':'akig/ak-59.jpg','hamlet-7':'akig/ak-65.jpg',
  'peergynt-6':'akig/ak-70.jpg','peergynt-7':'akig/ak-74.jpg',
  'zelfmoordenaar-2':'akig/ak-00.jpg',

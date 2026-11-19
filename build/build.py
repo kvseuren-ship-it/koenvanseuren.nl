@@ -264,7 +264,11 @@ def main():
             urls.append(f"{SITE}/{prefix(lang)}{p}")
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
           "\n".join(f"<url><loc>{u}</loc></url>" for u in urls) + "\n</urlset>\n")
-    write("CNAME", "koenvanseuren.nl\n")  # eigen domein voor GitHub Pages
+    write("CNAME", "koenvanseuren.nl\n")
+    # oude adressen doorsturen
+    for lang in LANGS:
+        for a, b in [("de-zelf-moordenaar", "de-zelfmoordenaar")]:
+            write(f"{prefix(lang)}werk/{a}.html", f'<!DOCTYPE html><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="{b}.html"><meta http-equiv="refresh" content="0; url={b}.html"><a href="{b}.html">→</a>')  # eigen domein voor GitHub Pages
     write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
     for f in ("style.css", "site.js", "favicon.svg"):
         shutil.copy(os.path.join(os.path.dirname(__file__), "static", f), os.path.join(OUT, f))
