@@ -25,7 +25,7 @@ RUNS = {
  "de-rattenvanger": [("2020-02-08", None, "premiere", "")],
 }
 AGENDA = {
- "a-storm-in-a-glass-of-water": (None, None, {"nl": "zomer 2027 · De Parade", "en": "summer 2027 · De Parade", "ru": "лето 2027 · De Parade"}),
+ "storm-in-a-glass-of-water": (None, None, {"nl": "zomer 2027 · De Parade", "en": "summer 2027 · De Parade", "ru": "лето 2027 · De Parade"}),
  "eenakter-toneelmakerij": (None, None, {"nl": "in ontwikkeling", "en": "in development", "ru": "в разработке"}),
  "vvv-voor-volk-en-vaderland": ("2027", "2028", {"nl": "in ontwikkeling", "en": "in development", "ru": "в разработке"}),
  "de-zelfmoordenaar": ("2026-11-13", "2026-11-15", "Jonge Harten Festival, Groningen"),

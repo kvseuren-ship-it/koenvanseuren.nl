@@ -36,7 +36,7 @@ M.update({
  'bp26-8':'bp/b18_090_BWC2727-1-scaled.jpg','bp26-9':'bp/b11_054_BWC2472-2-scaled.jpg','bp26-10':'bp/b03_LR-260618_2019_DeBoschParade_WillekeMachiels_AD2A0786_WM.jpg',
  'bp26-11':'bp/b07_038_BWC2386.jpg','bp26-12':'bp/b17_076_BWC2645.jpg',
  'bp24-1':'bp/b01_LR_BoschParade_WillekeMachiels_HR_064_AD2A5909.jpg',
- 'poster-watw':'bp/w01_watw.jpg',
+ 'poster-watw':'bp/w01_watw.jpg', 'poster-storm':'hzt/storm.jpg',
 })
 
 def run(out, only=None):

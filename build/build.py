@@ -278,7 +278,7 @@ def main():
     write("CNAME", "koenvanseuren.nl\n")
     # oude adressen doorsturen
     for lang in LANGS:
-        for a, b in [("de-zelf-moordenaar", "de-zelfmoordenaar")]:
+        for a, b in [("de-zelf-moordenaar", "de-zelfmoordenaar"), ("a-storm-in-a-glass-of-water", "storm-in-a-glass-of-water")]:
             write(f"{prefix(lang)}werk/{a}.html", f'<!DOCTYPE html><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="{b}.html"><meta http-equiv="refresh" content="0; url={b}.html"><a href="{b}.html">→</a>')  # eigen domein voor GitHub Pages
     write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
     for f in ("style.css", "site.js", "favicon.svg"):
