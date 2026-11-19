@@ -137,6 +137,7 @@ def build_home(lang):
     <figcaption>{HERO_CAPTION[lang]}</figcaption></figure>
   <section class="home-lists">
     <p class="lead">{lead}</p>
+    <p class="lead-src">— <a href="{root}{prefix(lang)}werk/hamlet-versus-don-quixote.html">{HOME_LEAD_SRC[lang]}</a></p>
     <h2>{u['binnenkort']}</h2>
     <ul class="mini">{''.join(row(w) for w in up)}</ul>
     <h2>{u['recent']}</h2>

@@ -356,11 +356,16 @@ MOSAIC = [("poster-herzschmerz","herzschmerz"),("wzna-3","we-zijn-niet-alleen"),
           ("hamlet-7","hamlet-versus-don-quixote"),("revenge-2","revenge-of-the-extras"),("poster-peergynt","peer-gynt"),("herzschmerz-7","herzschmerz"),
           ("poster-atwh","as-the-world-hurts"),("zelfmoordenaar-2","de-zelfmoordenaar"),("poster-hamlet","hamlet-versus-don-quixote"),("atwh-6","as-the-world-hurts")]
 
-# Openingszin op home (Koen, HZT 2025)
+# Openingszin op home: een personage van Koen (de boer in Hamlet versus Don Quixote, Antiklimax 2023)
 HOME_LEAD = {
-"nl": "In het toneelstuk dat het leven heet, speelt 99,9 procent van de mensen een bijrol. En toch dromen we er allemaal van de hoofdrol te spelen.",
-"en": "In the play called life, 99.9 per cent of people have a supporting role. And yet we all dream of playing the lead.",
-"ru": "В пьесе под названием «жизнь» 99,9 процента людей играют второстепенные роли. И всё же все мы мечтаем о главной.",
+"nl": "Wat ligt er achter dit geweld? In welk systeem zit ik als boer gevangen?",
+"en": "What lies behind this violence? What system am I trapped in, as a farmer?",
+"ru": "Что стоит за этим насилием? В какой системе я, крестьянин, заперт?",
+}
+HOME_LEAD_SRC = {
+"nl": "de boer in <em>Hamlet versus Don Quixote</em>",
+"en": "the farmer in <em>Hamlet versus Don Quixote</em>",
+"ru": "крестьянин в спектакле <em>Hamlet versus Don Quixote</em>",
 }
 
 # Hoeveel beelden per productie maximaal meedoen in de wisselende rij op home
