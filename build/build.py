@@ -52,6 +52,17 @@ def img_tag(key, root, alt="", cls="duo", sizes="(max-width: 760px) 100vw, 60vw"
             f'width="{w}" height="{h}" alt="{esc(alt)}" {load} decoding="async"{z}>')
 
 def page(lang, depth, path_nl, title, body, desc=None, og_img="portret", active=""):
+    ld = ""
+    if path_nl == "index.html":
+        person = {"@context": "https://schema.org", "@type": "Person", "name": "Koen van Seuren",
+                  "url": "https://koenvanseuren.nl/", "image": "https://koenvanseuren.nl/img/portret.jpg",
+                  "jobTitle": {"nl": "regisseur en schrijver", "en": "director and writer", "ru": "режиссёр и драматург"}[lang],
+                  "birthPlace": "Almere", "email": "mailto:" + CONTACT["email"],
+                  "alumniOf": "Toneelacademie Maastricht",
+                  "worksFor": {"@type": "TheaterGroup", "name": "Antiklimax", "url": "https://antiklimax.nl"},
+                  "sameAs": [CONTACT["instagram"], "https://antiklimax.nl", "https://www.hzt.nl/nl/team/koen-van-seuren",
+                             "https://www.theaterencyclopedie.nl/wiki/Koen_van_Seuren"]}
+        ld = '\n<script type="application/ld+json">' + json.dumps(person, ensure_ascii=False) + '</script>'
     """path_nl: pad zonder taalprefix, bv 'werk/peer-gynt.html' of 'index.html'"""
     u = UI[lang]; root = rel(depth)
     full_title = f"{title} · {NAME[lang]}" if title else f"{NAME[lang]} · {u['title_suffix']}"
@@ -86,7 +97,7 @@ def page(lang, depth, path_nl, title, body, desc=None, og_img="portret", active=
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(full_title)}</title>
 <meta name="description" content="{esc(desc or u['meta_desc'])}">
-<link rel="canonical" href="{canon}">
+<link rel="canonical" href="{canon}">{ld}
 {alts}
 <meta property="og:type" content="website">
 <meta property="og:title" content="{esc(full_title)}">
