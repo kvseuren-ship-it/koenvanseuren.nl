@@ -235,9 +235,10 @@ def build_agenda(lang):
     def row(w):
         a, b, pl = AGENDA[w["slug"]]
         pl = place(pl, lang) if pl else (w["status"][lang] if w.get("status") else "")
-        return (f'<li><span class="d">{esc(fmt(a, b, lang))}</span>'
+        d = fmt(a, b, lang) + (f" · {pl}" if pl else "")
+        return (f'<li><span class="d">{esc(d)}</span> '
                 f'<span class="w"><a href="{root}{prefix(lang)}werk/{w["slug"]}.html">{esc(w["title"])}</a>'
-                f'<span class="pl">{esc(pl)}</span></span></li>')
+                f'<span class="r">{esc(w["role"][lang])}</span></span></li>')
     ws = [w for w in WORK if w["slug"] in AGENDA]
     up = [w for w in ws if w.get("upcoming")]
     recent = [w for w in ws if not w.get("upcoming") and w["year"] == str(YEAR_NOW)]
