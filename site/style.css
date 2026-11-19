@@ -147,7 +147,12 @@ blockquote footer{font-size:.85em;margin-top:.4em}
 .bio p:first-child{font-size:1.12em}
 .also{font-size:.92em}
 .agenda{list-style:none;padding:0;margin:0;max-width:46em}
-.agenda li{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:1em;padding:.5em 0;border-bottom:1px dashed var(--red-bright)}
+.agenda li{display:grid;grid-template-columns:10.5em minmax(0,1fr);gap:1em;padding:.55em 0;border-bottom:1px dashed var(--red-bright)}
+.agenda .d{white-space:nowrap}
+.agenda .w a{font-weight:700}
+.agenda .pl{display:block;font-size:.85em;margin-top:.15em}
+.dates li{display:grid;grid-template-columns:8.6em minmax(0,1fr);gap:.6em}
+.dates .d{white-space:nowrap}
 
 /* ---------- lightbox */
 .lightbox{position:fixed;inset:0;background:rgba(255,255,255,.97);display:flex;align-items:center;justify-content:center;z-index:20;padding:4vmin}

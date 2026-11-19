@@ -3,6 +3,7 @@
 import json, os, shutil, html, re
 from content import *
 from quotes import Q as QUOTES
+from runs import RUNS, AGENDA, fmt, place, run_line
 
 SITE = "https://koenvanseuren.nl"
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "site")
@@ -183,7 +184,7 @@ def build_prod(lang, w):
     text = "".join(f"<p>{p}</p>" for p in w["text"][lang])
     quotes = "".join(f'<blockquote><p>“{esc(q)}”</p><footer>— {esc(s)}</footer></blockquote>' for q, s in w["quotes"])
     credits = "".join(f"<dt>{esc(tr_label(a, lang))}</dt><dd>{esc(b)}</dd>" for a, b in w["credits"])
-    dates = "".join(f"<li>{esc(tr_date(d, lang))}</li>" for d in w["dates"])
+    dates = "".join(f'<li><span class="d">{esc(a)}</span> {esc(b)}</li>' for a, b in (run_line(r, lang) for r in RUNS.get(w["slug"], [])))
     gal = ""
     if len(w["imgs"]) > 1:
         gal = '<div class="gallery">' + "".join(
@@ -231,22 +232,20 @@ def build_over(lang):
 
 def build_agenda(lang):
     u = UI[lang]; depth = 0 if lang == "nl" else 1; root = rel(depth)
-    def block(ws, only_first=False):
-        out = []
-        for w in ws:
-            ds = list(w["dates"])
-            if not ds and w.get("status"):
-                ds = [w["status"][lang]]
-            for d in (ds[:1] if only_first else ds):
-                out.append(f'<li><span class="d">{esc(tr_date(d, lang))}</span> <a href="{root}{prefix(lang)}werk/{w["slug"]}.html">{esc(w["title"])}</a></li>')
-        return "".join(out)
-    up = [w for w in WORK if w.get("upcoming")]
-    recent = [w for w in WORK if not w.get("upcoming") and w["year"] == str(YEAR_NOW)]
-    earlier = [w for w in WORK if not w.get("upcoming") and w["year"] != str(YEAR_NOW) and w["dates"]]
+    def row(w):
+        a, b, pl = AGENDA[w["slug"]]
+        pl = place(pl, lang) if pl else (w["status"][lang] if w.get("status") else "")
+        return (f'<li><span class="d">{esc(fmt(a, b, lang))}</span>'
+                f'<span class="w"><a href="{root}{prefix(lang)}werk/{w["slug"]}.html">{esc(w["title"])}</a>'
+                f'<span class="pl">{esc(pl)}</span></span></li>')
+    ws = [w for w in WORK if w["slug"] in AGENDA]
+    up = [w for w in ws if w.get("upcoming")]
+    recent = [w for w in ws if not w.get("upcoming") and w["year"] == str(YEAR_NOW)]
+    earlier = [w for w in ws if not w.get("upcoming") and w["year"] != str(YEAR_NOW)]
     body = f"""<h1 class="pagetitle">{u['agenda']}</h1>
-<h2>{u['binnenkort']}</h2><ul class="agenda">{block(up)}</ul>
-<h2>{u['recent']}</h2><ul class="agenda">{block(recent)}</ul>
-<h2>{u['archief']}</h2><ul class="agenda">{block(earlier, only_first=True)}</ul>
+<h2>{u['binnenkort']}</h2><ul class="agenda">{"".join(map(row, up))}</ul>
+<h2>{u['recent']}</h2><ul class="agenda">{"".join(map(row, recent))}</ul>
+<h2>{u['archief']}</h2><ul class="agenda">{"".join(map(row, earlier))}</ul>
 <p class="note">{AGENDA_NOTE[lang]}</p>"""
     return page(lang, depth, "agenda.html", u["agenda"], body, active="agenda")
 

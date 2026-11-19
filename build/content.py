@@ -119,7 +119,7 @@ WORK = [
   "ru": ["Финальная часть трилогии Antiklimax о романтизме — о самом спорном его наследии: национализме.",
          "Добро пожаловать в Стеггелен. Когда-то здесь каждые полчаса останавливался автобус, а теперь крошечное туристическое бюро тщетно ждёт гостей. Когда деревне грозит исчезновение из-за слияния муниципалитетов, сопротивление разрастается в народный миф героических масштабов. Бомбастическая трагикомедия о тоске по общности: если не земля, на которой мы родились, — что же у нас на самом деле общего?"]},
  "credits": [["concept & tekst", "Antiklimax"], ["regie", "Koen van Seuren"], ["coproductie", "Grand Theatre Groningen"]],
- "quotes": [], "dates": [], "imgs": ["vvv-1"], "photo": "Antiklimax", "upcoming": True,
+ "quotes": [], "imgs": ["vvv-1"], "photo": "Antiklimax", "upcoming": True,
 },
 {
  "slug": "de-zelfmoordenaar", "year": "2026", "title": "De Zelfmoordenaar",
@@ -136,7 +136,7 @@ WORK = [
              ["spel", "Mees Alberts, Jip Kluwer, Ido Kootstra, Maaike Kroneman, Misha Leigh-Valles, Joan Leunge, Lente Mintjes, Oskar Moorlag, Sven Mulder, Daan Wieringa"],
              ["kostuums", "Freja Roelofs, Demi Dijstelberge, Jonna Mulder"], ["vormgeving", "André Kok"], ["techniek", "Herman van Keulen"], ["productie", "Jente Rikken"],
              ["naar", "De Zelfmoordenaar van Nikolaj Erdman"]],
- "quotes": [], "dates": ["13–15/11/2026 · Jonge Harten Festival, Groningen"], "imgs": ["zelfmoordenaar-2", "zelfmoordenaar-1"], "poster": "poster-zelfmoordenaar", "photo": "De Noorderlingen, Jonge Harten",
+ "quotes": [], "imgs": ["zelfmoordenaar-2", "zelfmoordenaar-1"], "poster": "poster-zelfmoordenaar", "photo": "De Noorderlingen, Jonge Harten",
 },
 {
  "slug": "we-zijn-niet-alleen", "year": "2026", "title": "We zijn niet alleen",
@@ -154,7 +154,6 @@ WORK = [
          "Спектакль шёл на передвижном театральном фестивале De Parade в Гааге, Амстердаме и Утрехте (лето 2026), начиная с Гааги — с аншлагами каждый вечер. Рецензия Хана ван Виринге в <em>De Groene Amsterdammer</em>."]},
  "credits": [["spel", "Luca Bötzel"], ["tekst & regie", "Koen van Seuren"], ["licht", "Wout Panis"], ["dramaturgie", "Luna Joosten"], ["artistieke begeleiding", "Ellen Goemans"], ["foto's", "Niels “Knelis” Meijer"]],
  "quotes": [],
- "dates": ["juli 2026 · De Parade, Den Haag", "juli 2026 · De Parade, Amsterdam", "14–18/08/2026 · De Parade, Utrecht"],
  "imgs": ["wzna-1", "wzna-2", "wzna-3", "wzna-4", "wzna-5"], "photo": "Niels “Knelis” Meijer",
 },
 {
@@ -173,7 +172,6 @@ WORK = [
          "Парад увидели более 56 000 зрителей; ещё почти 25 000 посетили «Сад земных наслаждений» в Цитадели."]},
  "credits": [["regie", "Koen van Seuren"], ["curator", "David Bade"], ["muziek", "Nicoline Soeter"], ["libretto", "Joachim Robbrecht"], ["artistiek leider", "Erik de Jong"]],
  "quotes": [],
- "dates": ["18–21/06/2026 · Dommel, ’s-Hertogenbosch", "20/05–21/06/2026 · Tuin der Lusten, Citadel"],
  "imgs": ["bp26-2", "bp26-1", "bp26-3", "bp26-4", "bp26-5", "bp26-6", "bp26-7", "bp26-8", "bp26-9", "bp26-10", "bp26-11", "bp26-12"], "photo": "Bosch Parade, Willeke Machiels",
 },
 {
@@ -189,7 +187,6 @@ WORK = [
          "Театральный режиссёр Элиас пытается спасти разваливающийся спектакль — и собственную жизнь. Он просит старую подругу Люсинду пройти пробы на роль Лотты. То, что начинается как прослушивание, превращается в романтический бермудский треугольник, пока снаружи горит мир. Любовь — это их бегство от реальности? Или реальность спасёт их от любви?"]},
  "credits": [["concept & tekst", "Antiklimax"], ["regie", "Koen van Seuren"], ["spel", "David Westera, Mathieu Wijdeven, Pleun de Roode"], ["scenografie & kostuums", "Caz Egelie"], ["lichtontwerp", "Bogi Bakker"], ["dramaturgie", "Luna Joosten"], ["productieleiding", "Annemarie Venema"], ["coproductie", "Grand Theatre Groningen"], ["foto's", "Niels “Knelis” Meijer"]],
  "quotes": [["Een over-de-top komedie met diep tragische elementen.", "Kester Freriks, Theaterkrant"], ["Echt ingenieus gemaakt.", "Leonie Clement, Festival Cement"]],
- "dates": ["20/02/2026 · première, Grand Theatre Groningen", "tournee feb–apr 2026 o.a. De Nieuwe Vorst Tilburg, Schuur Haarlem, Theater Kikker Utrecht, Zaal 3 Den Haag, De Harmonie Leeuwarden, Theater Bellevue Amsterdam, Theater Walhalla Rotterdam, De Lieve Vrouw Amersfoort, Theater aan de Rijn Arnhem"],
  "imgs": ["herzschmerz-1", "herzschmerz-11", "herzschmerz-7", "herzschmerz-2", "herzschmerz-6", "herzschmerz-3", "herzschmerz-8", "herzschmerz-4", "herzschmerz-5", "herzschmerz-12"], "poster": "poster-herzschmerz", "photo": "Niels “Knelis” Meijer",
 },
 {
@@ -205,7 +202,6 @@ WORK = [
          "Летний спектакль Het Zuidelijk Toneel, шедший на фестивале De Parade в Роттердаме, Гааге, Амстердаме и Утрехте."]},
  "credits": [["tekst & regie", "Koen van Seuren"], ["spel", "Emma Vermeulen, Noah de Nooij, Teun Donders"], ["muziek", "Ton van der Meer"], ["kostuums", "Ilse Vermeulen"], ["tekstadvies", "David Westera"], ["dramaturgisch advies", "Joachim Robbrecht"], ["productie", "Het Zuidelijk Toneel"]],
  "quotes": [["Een vrolijke verpakking met hoge amusementswaarde.", "de Volkskrant"], ["Een echte Parade-voorstelling met actie, humor en visuele effecten.", "NRC"], ["Een dramaturgisch uitbundig, kort toneelstuk.", "Kester Freriks, Theaterkrant"]],
- "dates": ["20/06/2025 · première, De Parade Rotterdam", "zomer 2025 · De Parade Den Haag, Amsterdam, Utrecht"],
  "imgs": ["revenge-1", "revenge-2", "revenge-3"], "photo": "Het Zuidelijk Toneel",
 },
 {
@@ -218,7 +214,6 @@ WORK = [
   "ru": ["Обряд посвящения с актёрами-любителями из Брабанта. Кто такой брабантец и когда ты становишься частью Брабанта? Ансамбль Het Zuidelijk Toneel и местные исполнители из каждого города гастролей превращают вечер в красно-белый клетчатый брабантский праздник — с ликёром Schrobbelèr и колбасными булочками прямо на сцене."]},
  "credits": [["regie", "Sarah Moeremans"], ["spel", "Alicia Boedhoe, Gillis Biesheuvel, Julia Ghysels, Joep van der Geest, Keja Klaasje Kwestro, Louis van der Waal en 32 Brabantse spelers"], ["kostuums", "Daphne de Winkel"], ["muziek", "Timo Merkies"], ["regieassistent", "Koen van Seuren"], ["productie", "Het Zuidelijk Toneel"], ["foto's", "Sofie Knijff"]],
  "quotes": [],
- "dates": ["31/01/2025 · première", "tournee tot 16/03/2025 · Tilburg, ’s-Hertogenbosch, Helmond, Etten-Leur, Roosendaal, Eindhoven"],
  "imgs": [], "photo": "Sofie Knijff",
 },
 {
@@ -234,7 +229,6 @@ WORK = [
          "Кун отвечал за итоговую режиссуру под эгидой Het Zuidelijk Toneel, вместе с Сарой Мурманс."]},
  "credits": [["eindregie", "Koen van Seuren"], ["co-regie", "Sarah Moeremans"], ["libretto", "Joachim Robbrecht"], ["artistiek leider", "Miesjel van Gerwen"]],
  "quotes": [],
- "dates": ["20–23/06/2024 · Dommel, ’s-Hertogenbosch"],
  "imgs": ["bp24-1"], "photo": "Willeke Machiels",
 },
 {
@@ -250,7 +244,6 @@ WORK = [
          "Романтичный, но отчаявшийся юноша принимает главное решение своей жизни: он жертвует уютной культурной жизнью и уходит в лес. Свободный от законов, обязательств и этикета, он надеется приблизиться к своей истинной природе. Но осталось ли в природе место для человека? Романтическое сафари, полное словесных находок, жизненных вопросов, фантазии и музыки."]},
  "credits": [["concept & tekst", "Antiklimax"], ["regie", "Koen van Seuren"], ["spel", "David Westera, Hélène Vrijdag, Emma Vermeulen"], ["scenografie & kostuums", "Caz Egelie"], ["muziek", "Aart Strootman"], ["dramaturgie", "Judith Blankenberg"], ["lichtontwerp", "Bogi Bakker"], ["tekstcoach", "Joachim Robbrecht"], ["coproductie", "Grand Theatre Groningen"], ["foto's", "Niels “Knelis” Meijer"]],
  "quotes": [["Een verrukkelijk, lichtvoetig theatersprookje.", "Peter van Strien, Dagblad van het Noorden ★★★★"]],
- "dates": ["04/05/2024 · première, Grand Theatre Groningen", "tournee 2024–2025 o.a. Theater Bellevue Amsterdam, Theater Kikker Utrecht, Theater Walhalla Rotterdam, Schuur Haarlem, Zaal 3 Den Haag, Verkadefabriek Den Bosch"],
  "imgs": ["atwh-1", "atwh-11", "atwh-4", "atwh-12", "atwh-5", "atwh-2", "atwh-6", "atwh-7", "atwh-10", "atwh-3"], "poster": "poster-atwh", "photo": "Niels “Knelis” Meijer",
 },
 {
@@ -262,7 +255,7 @@ WORK = [
   "en": ["A musical comedy after <em>Frühere Verhältnisse</em> by the Austrian comic playwright Johann Nestroy. Property tycoon Scheitermann and professor's daughter Josephine are both looking for a new personal assistant to put up with their wandering hands and changing moods. A delightful overdose of language, music and autotune about the false, unequal world of wealth and pretence."],
   "ru": ["Музыкальная комедия по пьесе австрийского комедиографа Иоганна Нестроя «Былые отношения». Девелопер Шайтерман и профессорская дочка Жозефина ищут нового личного ассистента, готового терпеть их распущенные руки и перепады настроения. Изобилие текста, музыки и автотюна о фальшивом, неравном мире богатства и видимости."]},
  "credits": [["regie", "Sarah Moeremans, Koen van Seuren"], ["tekstbewerking", "Sarah Moeremans, Gillis Biesheuvel, Joep van der Geest"], ["productie", "Het Zuidelijk Toneel, Club Gewalt"]],
- "quotes": [], "dates": ["23/06/2023 · première"], "imgs": [], "photo": "",
+ "quotes": [], "imgs": [], "photo": "",
 },
 {
  "slug": "hamlet-versus-don-quixote", "year": "2023", "title": "Hamlet versus Don Quixote",
@@ -277,7 +270,6 @@ WORK = [
          "Эвалинде Ламмерс и Давид Вестера ищут Гамлета и Дон Кихота в себе — между головой и сердцем, между эгоизмом и идеализмом. Гамлетить или донкихотствовать — вот в чём вопрос."]},
  "credits": [["concept", "Antiklimax"], ["regie & tekst", "Koen van Seuren"], ["spel & tekst", "David Westera, Evalinde Lammers"], ["dramaturgie", "Judith Blankenberg"], ["vormgeving", "Caz Egelie"], ["lichtontwerp", "Bogi Bakker"], ["coproductie", "Grand Theatre Groningen"], ["foto's", "Niels “Knelis” Meijer"]],
  "quotes": [["Een cadeautje vol energie en curieuze gebeurtenissen.", "Ingrid de Vries, Theater050"]],
- "dates": ["24/02/2023 · première, Grand Theatre Groningen", "tournee 2023 o.a. Festival Cement Den Bosch, Het Nationale Theater Den Haag, Theater Kikker Utrecht, Theater Walhalla Rotterdam, De Sloot Amsterdam"],
  "imgs": ["hamlet-1", "hamlet-2", "hamlet-6", "hamlet-3", "hamlet-7", "hamlet-4"], "poster": "poster-hamlet", "photo": "Niels “Knelis” Meijer",
 },
 {
@@ -293,7 +285,6 @@ WORK = [
          "Спектакль родился как дипломная работа в Театральной академии Маастрихта (2020); в 2022 году новая версия вышла в Grand Theatre Groningen."]},
  "credits": [["concept & tekst", "Antiklimax"], ["spel", "David Westera"], ["regie", "Koen van Seuren"], ["dramaturgie", "Judith Blankenberg"], ["lichtontwerp (2020)", "Bogi Bakker"], ["coproductie", "Grand Theatre Groningen"], ["foto's", "Niels “Knelis” Meijer"]],
  "quotes": [["Een spannende monoloog, virtuoos gespeeld ook.", "Moos van den Broek, Theaterkrant (keuze van de criticus)"], ["Met een ongelofelijke levenslust, bravoure, fantasie, welbespraaktheid en vooral talent.", "Dio van Velden, Theater050"]],
- "dates": ["04/06/2022 · première, Grand Theatre Groningen", "tournee 2022–2024 o.a. Het Nationale Theater Den Haag, Theater Kikker Utrecht, Theater Walhalla Rotterdam, De Lawei Drachten, Stormram-tournee Groningen/Friesland/Drenthe"],
  "imgs": ["peergynt-1", "peergynt-2", "peergynt-7", "peergynt-3", "peergynt-4", "peergynt-6"], "poster": "poster-peergynt", "photo": "Niels “Knelis” Meijer",
 },
 {
@@ -305,7 +296,7 @@ WORK = [
   "en": ["A visual performance by Finn Borath about boredom, futility and bullshit jobs: a man trapped in an office job that consists only of reading, stamping and sorting documents that nothing is ever done with. Shown at <em>Likeminds bedankt!</em>, Amsterdam-Noord."],
   "ru": ["Визуальный перформанс Финна Бората о скуке, бессмысленности и «бредовой работе»: человек заперт в офисе, где он лишь читает, штампует и сортирует бумаги, с которыми потом ничего не происходит. Показан в программе <em>Likeminds bedankt!</em> в Амстердаме-Норд."]},
  "credits": [["concept & uitvoering", "Finn Borath"], ["decor", "Yoeri Taken"], ["eindregie", "Koen van Seuren"], ["productie", "Likeminds"]],
- "quotes": [], "dates": ["07/04/2022 · Likeminds, Amsterdam"], "imgs": [], "photo": "",
+ "quotes": [], "imgs": [], "photo": "",
 },
 {
  "slug": "de-rattenvanger", "year": "2020", "title": "De Rattenvanger – What’s in a fairytale?",
@@ -316,7 +307,7 @@ WORK = [
   "en": ["A new instalment of Sarah Moeremans's fairy-tale series <em>What’s in a fairytale?</em> at Theater Oostpool, after the Pied Piper of Hamelin."],
   "ru": ["Новая часть сказочной серии Сары Мурманс <em>What’s in a fairytale?</em> в Theater Oostpool — по легенде о гамельнском крысолове."]},
  "credits": [["regie", "Sarah Moeremans, Koen van Seuren"], ["productie", "Theater Oostpool"]],
- "quotes": [], "dates": ["08/02/2020 · première"], "imgs": [], "photo": "",
+ "quotes": [], "imgs": [], "photo": "",
 },
 ]
 
