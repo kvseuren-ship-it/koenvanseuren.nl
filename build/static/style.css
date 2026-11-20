@@ -6,8 +6,10 @@
 @font-face{font-family:"PT Mono";src:url(fonts/pt-mono-cyr-400.woff2) format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 
 :root{
-  --red:#e23830;        /* Riso Bright Red */
-  --red-bright:#e23830; /* zelfde inkt voor lijnen en vlakken */
+  --red:#d9382e;        /* drukgang 1: Riso Bright Red */
+  --red-bright:#d9382e; /* zelfde inkt voor lijnen en vlakken */
+  --ink:#4f1512;        /* drukgang 2: ossenbloed, voor tekst */
+  --ink-muted:#7a3430;  /* ossenbloed lichter: metadata */
   --paper:#f4f1ea;       /* ongestreken papier */
   --pink:#f2d9d2;
   --gap:clamp(14px,2.2vw,28px);
@@ -15,7 +17,7 @@
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);isolation:isolate;color:var(--red);font:400 16px/1.5 var(--font);font-feature-settings:"kern"}
+body{margin:0;background:var(--paper);isolation:isolate;color:var(--ink);font:400 16px/1.5 var(--font);font-feature-settings:"kern"}
 @media (min-width:1400px){body{font-size:17px}}
 a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 a:hover{background:var(--red-bright);color:var(--paper);text-decoration:none}
@@ -31,7 +33,7 @@ em{font-style:italic}
 
 /* riso: papiervezel over het geheel; inkt mengt (multiply) met het papier, korrel en lichte uitvloeiing via #ink/#ink-s */
 body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E")}
-h1,.home .quote .line{filter:url(#ink);mix-blend-mode:multiply;text-shadow:0 0 .7px rgba(226,56,48,.35)}
+h1,.home .quote .line{filter:url(#ink);mix-blend-mode:multiply;text-shadow:0 0 .7px rgba(217,56,46,.35)}
 h2,h3,p:not(blockquote p),blockquote,dl,hr,.top nav,.agenda li,.dates li,.pn,ul.mini li,.info a:not(:has(img)),.info p,.work .y,.work .tt,.work .r,.work .noimg,.home .quote .who,.worklist::before,.work::after{filter:url(#ink-s);mix-blend-mode:multiply}
 
 /* duotoon: donker = rood, licht = wit. Kleur bij hover. */
@@ -187,4 +189,17 @@ blockquote footer{font-size:.85em;margin-top:.4em}
   ul.mini a{grid-template-columns:3.6em 1fr}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ---------- twee drukgangen: rood voor beeld, koppen, citaat en lijnen; donkere tweede inkt voor lopende tekst en metadata */
+a{text-decoration-color:var(--red)}
+a:hover{background:var(--red);color:var(--paper)}
+h1,h2,.home .quote,blockquote,.lightbox button{color:var(--red)}
+.m,figcaption,.photo-credit,.y,.work .r,.dates .d,dl dt,.over-facts,.info .tel,.agenda .r{color:var(--ink-muted)}
+.work a:hover{background:var(--pink);color:var(--ink)}
+.top nav a{text-decoration:none}
+.top nav a:hover{background:none;color:var(--red);text-decoration:underline}
+.top nav a[aria-current]{background:var(--red);color:var(--paper)}
+/* linkerfoto op home: middentonen en schaduwen openen vóór de duotoon */
+.home-img:not(:hover) img.duo{filter:brightness(1.2) contrast(.88) url(#duo)}
+
 @media print{.info,.top,.lightbox,.hero{display:none}img.duo{filter:none}}
