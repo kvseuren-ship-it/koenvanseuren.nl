@@ -8,8 +8,8 @@
 :root{
   --red:#d9382e;        /* drukgang 1: Riso Bright Red */
   --red-bright:#d9382e; /* zelfde inkt voor lijnen en vlakken */
-  --ink:#4f1512;        /* drukgang 2: ossenbloed, voor tekst */
-  --ink-muted:#7a3430;  /* ossenbloed lichter: metadata */
+  --ink:#7a1f1a;        /* drukgang 2: ossenbloed, voor tekst */
+  --ink-muted:#9a3328;  /* ossenbloed lichter: metadata */
   --paper:#f4f1ea;       /* ongestreken papier */
   --pink:#f2d9d2;
   --gap:clamp(14px,2.2vw,28px);
