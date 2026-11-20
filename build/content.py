@@ -180,7 +180,7 @@ WORK = [
          "Лука Бётцель произносит свидетельство человека, который точно знает: они здесь. Постепенно оказывается, что инопланетная правда лежит гораздо ближе — в утрате, бездомности и классе. Взгляд в голову конспиролога и под капот нашего общества.",
          "Спектакль шёл на передвижном театральном фестивале De Parade в Гааге, Амстердаме и Утрехте (лето 2026), начиная с Гааги — с аншлагами каждый вечер. Рецензия Хана ван Виринге в <em>De Groene Amsterdammer</em>."]},
  "credits": [["spel", "Luca Bötzel"], ["tekst & regie", "Koen van Seuren"], ["licht", "Wout Panis"], ["dramaturgie", "Luna Joosten"], ["artistieke begeleiding", "Ellen Goemans"], ["foto's", "Niels “Knelis” Meijer"]],
- "quotes": [],
+ "quotes": [["De tekst is op een fascinerende wijze ontregelend.", "Jos Schuring, Scènes"], ["Een speler met lef.", "Jos Schuring, Scènes, over Luca Bötzel"]],
  "imgs": ["wzna-1", "wzna-2", "wzna-3", "wzna-4", "wzna-5"], "photo": "Niels “Knelis” Meijer",
 },
 {
@@ -213,7 +213,7 @@ WORK = [
   "ru": ["История любви, которая покончит со всеми историями любви. Antiklimax расстаётся с романтической любовью в спектакле, полном страсти и криков души, — по «Страданиям юного Вертера» Гёте, «Мечтателям» Бертолуччи, множеству других любовных историй. И «Лицу со шрамом».",
          "Театральный режиссёр Элиас пытается спасти разваливающийся спектакль — и собственную жизнь. Он просит старую подругу Люсинду пройти пробы на роль Лотты. То, что начинается как прослушивание, превращается в романтический бермудский треугольник, пока снаружи горит мир. Любовь — это их бегство от реальности? Или реальность спасёт их от любви?"]},
  "credits": [["concept & tekst", "Antiklimax"], ["regie", "Koen van Seuren"], ["spel", "David Westera, Mathieu Wijdeven, Pleun de Roode"], ["scenografie & kostuums", "Caz Egelie"], ["lichtontwerp", "Bogi Bakker"], ["dramaturgie", "Luna Joosten"], ["productieleiding", "Annemarie Venema"], ["coproductie", "Grand Theatre Groningen"], ["foto's", "Niels “Knelis” Meijer"]],
- "quotes": [["Een over-de-top komedie met diep tragische elementen.", "Kester Freriks, Theaterkrant"], ["Echt ingenieus gemaakt.", "Leonie Clement, Festival Cement"]],
+ "quotes": [["Een over-de-top komedie met diep tragische elementen.", "Kester Freriks, Theaterkrant"], ["Heerlijke spelmomenten tussen Westera en De Roode, het plezier spat ervan af. De Sturm und Drang van Goethe krijgt alle glorie.", "Kester Freriks, Theaterkrant"], ["Een verrassende avond vol plotwendingen.", "Ingrid de Vries, Theater050"], ["Echt ingenieus gemaakt.", "Leonie Clement, Festival Cement"]],
  "imgs": ["herzschmerz-1", "herzschmerz-11", "herzschmerz-7", "herzschmerz-2", "herzschmerz-6", "herzschmerz-3", "herzschmerz-8", "herzschmerz-4", "herzschmerz-5", "herzschmerz-12"], "poster": "poster-herzschmerz", "photo": "Niels “Knelis” Meijer",
 },
 {
@@ -228,7 +228,7 @@ WORK = [
   "ru": ["Научно-фантастическая сатира о тех, кто никогда не оказывается в начале вызывного листа. На съёмках фантастического фильма двое ворчливых статистов захватывают главную сцену — не ради морального реванша, а чтобы их затянуло в абсурдное зрелище, где даже революция стала перформансом. С мигающими лазерами и капающей кровью пришельцев.",
          "Летний спектакль Het Zuidelijk Toneel, шедший на фестивале De Parade в Роттердаме, Гааге, Амстердаме и Утрехте."]},
  "credits": [["tekst & regie", "Koen van Seuren"], ["spel", "Emma Vermeulen, Noah de Nooij, Teun Donders"], ["muziek", "Ton van der Meer"], ["kostuums", "Ilse Vermeulen"], ["tekstadvies", "David Westera"], ["dramaturgisch advies", "Joachim Robbrecht"], ["productie", "Het Zuidelijk Toneel"]],
- "quotes": [["Een vrolijke verpakking met hoge amusementswaarde.", "de Volkskrant"], ["Een echte Parade-voorstelling met actie, humor en visuele effecten.", "NRC"], ["Een dramaturgisch uitbundig, kort toneelstuk.", "Kester Freriks, Theaterkrant"]],
+ "quotes": [["Een vrolijke verpakking met hoge amusementswaarde.", "de Volkskrant"], ["Een echte Parade-voorstelling met actie, humor en visuele effecten.", "NRC"], ["Er valt veel te genieten van deze satire.", "Kester Freriks, Theaterkrant"]],
  "imgs": ["revenge-1", "revenge-2", "revenge-3"], "photo": "Het Zuidelijk Toneel",
 },
 {
@@ -270,7 +270,7 @@ WORK = [
   "ru": ["Романтический «В диких условиях» о человеке и природе — первая часть трилогии Antiklimax о романтизме.",
          "Романтичный, но отчаявшийся юноша принимает главное решение своей жизни: он жертвует уютной культурной жизнью и уходит в лес. Свободный от законов, обязательств и этикета, он надеется приблизиться к своей истинной природе. Но осталось ли в природе место для человека? Романтическое сафари, полное словесных находок, жизненных вопросов, фантазии и музыки."]},
  "credits": [["concept & tekst", "Antiklimax"], ["regie", "Koen van Seuren"], ["spel", "David Westera, Hélène Vrijdag, Emma Vermeulen"], ["scenografie & kostuums", "Caz Egelie"], ["muziek", "Aart Strootman"], ["dramaturgie", "Judith Blankenberg"], ["lichtontwerp", "Bogi Bakker"], ["tekstcoach", "Joachim Robbrecht"], ["coproductie", "Grand Theatre Groningen"], ["foto's", "Niels “Knelis” Meijer"]],
- "quotes": [["Een verrukkelijk, lichtvoetig theatersprookje.", "Peter van Strien, Dagblad van het Noorden ★★★★"]],
+ "quotes": [["Een verrukkelijk, lichtvoetig theatersprookje. Anderhalf uur postromantisch speel- en taalplezier met een bittere, mild cynische ondertoon.", "Peter van Strien, Dagblad van het Noorden ★★★★"], ["Wel legt deze vrolijke voorstelling de vinger trefzeker op pijnlijke plekken.", "Peter van Strien, Dagblad van het Noorden"]],
  "imgs": ["atwh-1", "atwh-11", "atwh-4", "atwh-12", "atwh-5", "atwh-2", "atwh-6", "atwh-7", "atwh-10", "atwh-3"], "poster": "poster-atwh", "photo": "Niels “Knelis” Meijer",
 },
 {
@@ -282,7 +282,7 @@ WORK = [
   "en": ["A musical comedy after <em>Frühere Verhältnisse</em> by the Austrian comic playwright Johann Nestroy. Property tycoon Scheitermann and professor's daughter Josephine are both looking for a new personal assistant to put up with their wandering hands and changing moods. A delightful overdose of language, music and autotune about the false, unequal world of wealth and pretence."],
   "ru": ["Музыкальная комедия по пьесе австрийского комедиографа Иоганна Нестроя «Былые отношения». Девелопер Шайтерман и профессорская дочка Жозефина ищут нового личного ассистента, готового терпеть их распущенные руки и перепады настроения. Изобилие текста, музыки и автотюна о фальшивом, неравном мире богатства и видимости."]},
  "credits": [["regie", "Sarah Moeremans, Koen van Seuren"], ["tekstbewerking", "Sarah Moeremans, Gillis Biesheuvel, Joep van der Geest"], ["productie", "Het Zuidelijk Toneel, Club Gewalt"]],
- "quotes": [], "imgs": [], "photo": "",
+ "quotes": [["Tekst: over de top. Speelstijl: over de top. Alles: over de top.", "Sander Janssens, Theaterkrant"], ["Kluchtig, leuk en lekker, ook wat betreft tekst, geluid en spel.", "Arnold Verplancke, Brabant Cultureel"]], "imgs": [], "photo": "",
 },
 {
  "slug": "hamlet-versus-don-quixote", "year": "2023", "title": "Hamlet versus Don Quixote",
@@ -296,7 +296,7 @@ WORK = [
   "ru": ["Дуэль двух (анти)героев. Мы сомневаемся в мире, в себе, в добре и зле, а тем временем горят леса, поднимается уровень моря и растёт неравенство. Каких героев требует наше время?",
          "Эвалинде Ламмерс и Давид Вестера ищут Гамлета и Дон Кихота в себе — между головой и сердцем, между эгоизмом и идеализмом. Гамлетить или донкихотствовать — вот в чём вопрос."]},
  "credits": [["concept", "Antiklimax"], ["regie & tekst", "Koen van Seuren"], ["spel & tekst", "David Westera, Evalinde Lammers"], ["dramaturgie", "Judith Blankenberg"], ["vormgeving", "Caz Egelie"], ["lichtontwerp", "Bogi Bakker"], ["coproductie", "Grand Theatre Groningen"], ["foto's", "Niels “Knelis” Meijer"]],
- "quotes": [["Een cadeautje vol energie en curieuze gebeurtenissen.", "Ingrid de Vries, Theater050"]],
+ "quotes": [["Een cadeautje vol energie en curieuze gebeurtenissen.", "Ingrid de Vries, Theater050"], ["Een opmerkelijke mix van literatuur, levensvraagstukken, fantasie, taalvondsten, Disney-karaoke, actie-reactie en sokkenspel.", "Ingrid de Vries, Theater050"]],
  "imgs": ["hamlet-1", "hamlet-2", "hamlet-6", "hamlet-3", "hamlet-7", "hamlet-4"], "poster": "poster-hamlet", "photo": "Niels “Knelis” Meijer",
 },
 {
@@ -311,7 +311,7 @@ WORK = [
   "ru": ["Феерия лжи и мании величия. Antiklimax переписал монументальную пьесу Ибсена, в которой более шестидесяти персонажей, в монолог для одного одинокого лжеца — двадцатилетнего парня в поисках своей главной роли на мировой сцене. Кто ты на самом деле, когда лжёшь?",
          "Спектакль родился как дипломная работа в Театральной академии Маастрихта (2020); в 2022 году новая версия вышла в Grand Theatre Groningen."]},
  "credits": [["concept & tekst", "Antiklimax"], ["spel", "David Westera"], ["regie", "Koen van Seuren"], ["dramaturgie", "Judith Blankenberg"], ["lichtontwerp (2020)", "Bogi Bakker"], ["coproductie", "Grand Theatre Groningen"], ["foto's", "Niels “Knelis” Meijer"]],
- "quotes": [["Een spannende monoloog, virtuoos gespeeld ook.", "Moos van den Broek, Theaterkrant (keuze van de criticus)"], ["Met een ongelofelijke levenslust, bravoure, fantasie, welbespraaktheid en vooral talent.", "Dio van Velden, Theater050"]],
+ "quotes": [["Knap herschreven, virtuoos gespeeld ook.", "Moos van den Broek, Theaterkrant (keuze van de criticus)"], ["Met een ongelofelijke levenslust, bravoure, fantasie, welbespraaktheid en vooral talent.", "Dio van Velden, Theater050"], ["Eenvoudig maar vernuftig schimmenspel met een zaklantaarn.", "Dio van Velden, Theater050"]],
  "imgs": ["peergynt-1", "peergynt-2", "peergynt-7", "peergynt-3", "peergynt-4", "peergynt-6"], "poster": "poster-peergynt", "photo": "Niels “Knelis” Meijer",
 },
 {
