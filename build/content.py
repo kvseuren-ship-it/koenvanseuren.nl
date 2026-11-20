@@ -67,7 +67,6 @@ BIO = {
 #  - Koens tekst op antiklimax.nl, pagina Personae (PER)
 BIO_QUOTE = {
 "nl": [
-"Ik vertel geen verhalen om te bevestigen, maar om te bevragen.",  # VVV
 "In het theater worden thema’s vaak psychologisch of poëtisch benaderd, maar zelden structureel en ideologisch. Mijn personages zijn geen mensen in de psychologische zin van het woord; ze zijn dragers van ideeën, belichaamde ideologieën. Een personage is nooit puur een individu, maar wordt geconstrueerd uit de omgeving waarin het zich begeeft.",  # VVV + HZT
 "In een tijd waarin de kloof tussen arm en rijk groeit en het vertrouwen in instituties verdampt, is het logisch dat juist degenen die aan het kortste eind trekken fundamentele vragen stellen over de aard van het systeem. Bij gebrek aan een coherente ideologie die reëel verzet mogelijk maakt, zoeken mensen hun toevlucht tot verhalen die ontspringen aan een reëel fundament, klassenverschillen en onmacht, maar die vervolgens zo ver worden doorgevoerd dat ze het contact met de werkelijkheid verliezen.",  # WZNA
 "Onze verbeelding zit vast in de romantische orde. Romantiek maakt onze verlangens vermarktbaar – vrijheid is de aanschaf van een Range Rover, de ware liefde vind je door het juiste parfum te kopen – en tegelijkertijd blijft wat we werkelijk verlangen altijd onbereikbaar; waardoor we blijven consumeren, zonder dat de wereld om ons heen verandert of ons echt gelukkiger maakt.",  # VVV
@@ -76,7 +75,6 @@ BIO_QUOTE = {
 "Waar de realiteit tekortschiet en een collectief verhaal mist om die pijn te duiden, neemt de overlevingsdrang van de fantasie het over.",  # WZNA
 ],
 "en": [
-"I don't tell stories to confirm, but to question.",
 "In theatre, themes are often approached psychologically or poetically, but rarely structurally and ideologically. My characters are not people in the psychological sense of the word; they are carriers of ideas, embodied ideologies. A character is never purely an individual, but is constructed from the environment it moves in.",
 "At a time when the gap between rich and poor is widening and trust in institutions is evaporating, it makes sense that precisely those who draw the short straw ask fundamental questions about the nature of the system. In the absence of a coherent ideology that makes real resistance possible, people take refuge in stories that spring from a real foundation, class differences and powerlessness, but are then pushed so far that they lose touch with reality.",
 "Our imagination is stuck in the romantic order. Romanticism makes our desires marketable – freedom is buying a Range Rover, true love is found by buying the right perfume – while what we really desire always remains out of reach; so we keep consuming, without the world around us changing or making us any happier.",
@@ -85,7 +83,6 @@ BIO_QUOTE = {
 "Where reality falls short and a collective story is missing to make sense of that pain, the survival instinct of fantasy takes over.",
 ],
 "ru": [
-"Я рассказываю истории не чтобы подтверждать, а чтобы ставить под вопрос.",
 "В театре темы часто решаются психологически или поэтически, но редко структурно и идеологически. Мои персонажи — не люди в психологическом смысле слова; они носители идей, воплощённые идеологии. Персонаж никогда не бывает просто индивидом — его конструирует среда, в которой он существует.",
 "Во времена, когда разрыв между бедными и богатыми растёт, а доверие к институтам испаряется, логично, что именно те, кому досталось меньше всех, задают фундаментальные вопросы о природе системы. За неимением цельной идеологии, которая сделала бы возможным реальное сопротивление, люди ищут убежища в историях, растущих из реальной почвы — классового неравенства и бессилия, — но доведённых до такой крайности, что они теряют связь с реальностью.",
 "Наше воображение застряло в романтическом порядке. Романтизм делает наши желания товаром — свобода есть покупка Range Rover, настоящая любовь находится с правильными духами, — а то, чего мы действительно хотим, остаётся недостижимым; и мы продолжаем потреблять, а мир вокруг не меняется и счастливее нас не делает.",

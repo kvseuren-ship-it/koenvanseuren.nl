@@ -91,7 +91,6 @@ ul.mini .m{grid-column:2;font-size:.85em}
 .over-facts p{margin:0 0 .8em}
 .own{max-width:34em;padding-top:.2em}
 .own p{font-size:1.06em;line-height:1.55;margin:0 0 1.15em}
-.own p:first-child{font-size:clamp(1.3rem,2.2vw,1.9rem);line-height:1.22;font-weight:700;letter-spacing:-.01em;margin-bottom:1em}
 .own p:last-child{font-style:italic;margin-top:1.6em}
 /* home: beeldenrij */
 .mosaic{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:calc(var(--gap)*.6);margin-top:calc(var(--gap)*2.2)}
