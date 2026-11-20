@@ -29,12 +29,9 @@ em{font-style:italic}
 ::selection{background:var(--red-bright);color:#fff}
 .skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;background:#fff;padding:6px;z-index:10}
 
-/* riso: witte inktspikkels over alles (tekst, lijnen, beeld) en licht rafelige koppen */
-body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background:url(grain.png) 0 0/170px 170px repeat;opacity:.8}
+/* riso: inkt met spikkels en rafelranden, alleen op letters en lijnen (foto's hebben hun eigen duotoonkorrel) */
 h1,.home .quote .line{filter:url(#ink)}
-h2,h3,p:not(blockquote p),blockquote,dl,hr,.top nav,.agenda li,.dates li,.pn,ul.mini li,.info a,.info p{filter:url(#ink-s)}
-img.duo{position:relative;z-index:51}
-@media print{body::after{display:none}}
+h2,h3,p:not(blockquote p),blockquote,dl,hr,.top nav,.agenda li,.dates li,.pn,ul.mini li,.info a:not(:has(img)),.info p{filter:url(#ink-s)}
 
 /* duotoon: donker = rood, licht = wit. Kleur bij hover. */
 img.duo{filter:url(#duo);transition:filter .5s ease}
