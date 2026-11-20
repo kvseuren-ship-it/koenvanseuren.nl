@@ -11,7 +11,7 @@ M={
  'herzschmerz-4':'ak/herzschmerz__Herzschmerz---Antiklimax-NielsKnelis-0062-DSC_1953.jpg',
  'herzschmerz-5':'ak/herzschmerz__Herzschmerz---Antiklimax-NielsKnelis-0035-B0005231.jpg',
  'herzschmerz-6':'ak/herzschmerz__Herzschmerz---Antiklimax-NielsKnelis-0127-DSC_2952.jpg',
- 'revenge-1':('ig/ig-15-HZT-Revenge.jpg',0.70),'revenge-2':('ig/ig-17-HZT-Revenge.jpg',0.64),'revenge-3':'ig/ig-18-HZT-RevengeCampaign.jpg',
+ 'revenge-1':('ig/ig-15-HZT-Revenge.jpg',0.70),'revenge-2':('ig/ig-17-HZT-Revenge.jpg',0.64),'revenge-3':'ig/ig-18-HZT-RevengeCampaign.jpg','revenge-4':'rev/hzt-1.jpg','revenge-5':'rev/hzt-2.jpg','revenge-6':'rev/hzt-3.jpg','revenge-7':'rev/hzt-4.jpg','revenge-8':'rev/hzt-5.jpg','revenge-9':'rev/tk-1.jpg','revenge-10':'rev/tk-2.jpg',
  'atwh-1':'ak/atwh__1500.jpg','atwh-2':'grand/g07_antiklimax-astheworldhurts-nielsknelis-0005-dsc_0248.jpg','atwh-3':'grand/g08_antiklimax-astheworldhurts-nielsknelis-0013-dsc_9404.jpg',
  'hamlet-1':'ak/hamlet__Hamlet-2400.jpg','hamlet-2':'ak/hamlet__DONvsHAM-Antiklimax-Nielsknelis-DEF-0008-DSC_3405.jpg','hamlet-3':'ak/hamlet__DONvsHAM-Antiklimax-Nielsknelis-DEF-0011-DSC_3699.jpg','hamlet-4':'grand/g12_donvsham_antiklimax_nielsknelis-0175-dsc_4054.jpg',
  'peergynt-1':'ak/peergynt__Peer-Gynt-2400.jpg','peergynt-2':'ak/peergynt__NielsKnelis-Antiklimax-2juni-143-DSC_5536.jpg','peergynt-3':'ak/peergynt__NielsKnelis-Antiklimax-2juni-049-DSC_1951.jpg','peergynt-4':'ak/peergynt__NielsKnelis-Antiklimax-2juni-082-DSC_5372.jpg',

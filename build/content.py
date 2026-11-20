@@ -226,7 +226,7 @@ WORK = [
          "Летний спектакль Het Zuidelijk Toneel, шедший на фестивале De Parade в Роттердаме, Гааге, Амстердаме и Утрехте."]},
  "credits": [["tekst & regie", "Koen van Seuren"], ["spel", "Emma Vermeulen, Noah de Nooij, Teun Donders"], ["muziek", "Ton van der Meer"], ["kostuums", "Ilse Vermeulen"], ["tekstadvies", "David Westera"], ["dramaturgisch advies", "Joachim Robbrecht"], ["productie", "Het Zuidelijk Toneel"]],
  "quotes": [["Een vrolijke verpakking met hoge amusementswaarde.", "de Volkskrant"], ["Een echte Parade-voorstelling met actie, humor en visuele effecten.", "NRC"], ["Er valt veel te genieten van deze satire.", "Kester Freriks, Theaterkrant"]],
- "imgs": ["revenge-1", "revenge-2", "revenge-3"], "photo": "Het Zuidelijk Toneel",
+ "imgs": ["revenge-5", "revenge-4", "revenge-6", "revenge-7", "revenge-9", "revenge-8", "revenge-10", "revenge-3"], "photo": "Sofie Knijff / Het Zuidelijk Toneel",
 },
 {
  "slug": "we-are-the-world-we-are-the-brabant", "poster": "poster-watw", "year": "2025", "title": "We Are The World, We Are The Brabant",
