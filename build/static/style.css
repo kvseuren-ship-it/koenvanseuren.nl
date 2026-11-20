@@ -6,16 +6,16 @@
 @font-face{font-family:"PT Mono";src:url(fonts/pt-mono-cyr-400.woff2) format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 
 :root{
-  --red:#e00000;        /* tekst: genoeg contrast op wit */
-  --red-bright:#ff0000; /* lijnen, accenten */
-  --paper:#fff;
-  --pink:#ffe5e5;
+  --red:#e23830;        /* Riso Bright Red */
+  --red-bright:#e23830; /* zelfde inkt voor lijnen en vlakken */
+  --paper:#f4f1ea;       /* ongestreken papier */
+  --pink:#f2d9d2;
   --gap:clamp(14px,2.2vw,28px);
   --font:"Courier Prime","PT Mono","Courier New",Courier,monospace;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--red);font:400 16px/1.5 var(--font);font-feature-settings:"kern"}
+body{margin:0;background:var(--paper);isolation:isolate;color:var(--red);font:400 16px/1.5 var(--font);font-feature-settings:"kern"}
 @media (min-width:1400px){body{font-size:17px}}
 a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 a:hover{background:var(--red-bright);color:var(--paper);text-decoration:none}
@@ -26,15 +26,16 @@ h1,h2,h3{font-weight:700;line-height:1.1;margin:0}
 h2{font-size:1rem;text-transform:lowercase;letter-spacing:.02em;margin:2.2em 0 .7em}
 h2::before{content:"— "}
 em{font-style:italic}
-::selection{background:var(--red-bright);color:#fff}
+::selection{background:var(--red-bright);color:var(--paper)}
 .skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;background:#fff;padding:6px;z-index:10}
 
-/* riso: inkt met spikkels en rafelranden, alleen op letters en lijnen (foto's hebben hun eigen duotoonkorrel) */
-h1,.home .quote .line{filter:url(#ink)}
-h2,h3,p:not(blockquote p),blockquote,dl,hr,.top nav,.agenda li,.dates li,.pn,ul.mini li,.info a:not(:has(img)),.info p,.work .y,.work .tt,.work .r,.work .noimg,.home .quote .who,.worklist::before,.work::after{filter:url(#ink-s)}
+/* riso: papiervezel over het geheel; inkt mengt (multiply) met het papier, korrel en lichte uitvloeiing via #ink/#ink-s */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E")}
+h1,.home .quote .line{filter:url(#ink);mix-blend-mode:multiply;text-shadow:0 0 .7px rgba(226,56,48,.35)}
+h2,h3,p:not(blockquote p),blockquote,dl,hr,.top nav,.agenda li,.dates li,.pn,ul.mini li,.info a:not(:has(img)),.info p,.work .y,.work .tt,.work .r,.work .noimg,.home .quote .who,.worklist::before,.work::after{filter:url(#ink-s);mix-blend-mode:multiply}
 
 /* duotoon: donker = rood, licht = wit. Kleur bij hover. */
-img.duo{filter:url(#duo);transition:filter .5s ease}
+img.duo{filter:url(#duo);mix-blend-mode:multiply;transition:filter .5s ease}
 @media (hover:hover){a:hover img.duo, figure:hover > img.duo{filter:none}}
 a:hover:has(img){background:none}
 
@@ -42,7 +43,7 @@ a:hover:has(img){background:none}
 .top{padding:22px var(--gap) 0}
 .top nav a{justify-self:start}
 .top nav{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);padding-bottom:22px;border-bottom:1px dashed var(--red-bright)}
-.top nav a[aria-current]{background:var(--red-bright);color:#fff;text-decoration:none}
+.top nav a[aria-current]{background:var(--red-bright);color:var(--paper);text-decoration:none}
 .top .name{white-space:nowrap}
 
 /* ---------- raster: inhoud + infopaneel */
@@ -116,7 +117,7 @@ ul.mini .m{grid-column:2;font-size:.85em}
 .work .noimg{display:block;border:1px dashed var(--red-bright)}
 .work strong{display:block;font-size:1.25em;line-height:1.15}
 .work .m{display:block;font-size:.85em;margin-top:.3em}
-.work .status{display:inline-block;font-size:.8em;margin-top:.5em;background:var(--red-bright);color:#fff;padding:0 .4em}
+.work .status{display:inline-block;font-size:.8em;margin-top:.5em;background:var(--red-bright);color:var(--paper);padding:0 .4em}
 .work .r{font-size:.85em}
 .work a:hover{background:var(--pink);color:var(--red)}
 
@@ -156,7 +157,7 @@ blockquote footer{font-size:.85em;margin-top:.4em}
 .dates .d{white-space:nowrap}
 
 /* ---------- lightbox */
-.lightbox{position:fixed;inset:0;background:rgba(255,255,255,.97);display:flex;align-items:center;justify-content:center;z-index:20;padding:4vmin}
+.lightbox{position:fixed;inset:0;background:rgba(244,241,234,.97);display:flex;align-items:center;justify-content:center;z-index:20;padding:4vmin}
 .lightbox[hidden]{display:none}
 .lightbox img{max-width:100%;max-height:100%;object-fit:contain}
 .lightbox button{position:absolute;top:10px;right:16px;font:700 2.4rem/1 var(--font);color:var(--red);background:none;border:0;cursor:pointer}
