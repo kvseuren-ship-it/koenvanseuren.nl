@@ -39,7 +39,7 @@ def rel(depth):
 def esc(s):
     return html.escape(s, quote=True)
 
-SVG_FILTER = """<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="duo" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feColorMatrix in="SourceGraphic" type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0" result="g"/><feTurbulence type="fractalNoise" baseFrequency="GRAINF" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 0 1" result="ng"/><feComposite in="g" in2="ng" operator="arithmetic" k1="0" k2="1" k3="GRAINK" k4="GRAINOFF" result="m"/><feComponentTransfer in="m"><feFuncR type="table" tableValues=".72 1 1 1"/><feFuncG type="table" tableValues="0 .05 .5 .85 1"/><feFuncB type="table" tableValues="0 .05 .5 .85 1"/><feFuncA type="identity"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"/></filter></svg>"""
+SVG_FILTER = """<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="duo" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feColorMatrix in="SourceGraphic" type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0" result="g"/><feTurbulence type="fractalNoise" baseFrequency="GRAINF" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 0 1" result="ng"/><feComposite in="g" in2="ng" operator="arithmetic" k1="0" k2="1" k3="GRAINK" k4="GRAINOFF" result="m"/><feComponentTransfer in="m"><feFuncR type="table" tableValues=".72 1 1 1"/><feFuncG type="table" tableValues="0 .05 .5 .85 1"/><feFuncB type="table" tableValues="0 .05 .5 .85 1"/><feFuncA type="identity"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"/></filter><filter id="ink" x="-1%" y="-5%" width="102%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="3" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="1.6" xChannelSelector="R" yChannelSelector="G"/></filter><filter id="ink-s" x="-1%" y="-5%" width="102%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="5" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="1.05" xChannelSelector="R" yChannelSelector="G"/></filter></svg>"""
 GRAIN = {"f": ".62", "k": ".62", "off": "-.31"}
 SVG_FILTER = SVG_FILTER.replace("GRAINF", GRAIN["f"]).replace("GRAINK", GRAIN["k"]).replace("GRAINOFF", GRAIN["off"])
 
@@ -292,7 +292,7 @@ def main():
         for a, b in [("de-zelf-moordenaar", "de-zelfmoordenaar"), ("a-storm-in-a-glass-of-water", "storm-in-a-glass-of-water")]:
             write(f"{prefix(lang)}werk/{a}.html", f'<!DOCTYPE html><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="{b}.html"><meta http-equiv="refresh" content="0; url={b}.html"><a href="{b}.html">→</a>')  # eigen domein voor GitHub Pages
     write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
-    for f in ("style.css", "site.js", "favicon.svg"):
+    for f in ("style.css", "site.js", "favicon.svg", "grain.png"):
         shutil.copy(os.path.join(os.path.dirname(__file__), "static", f), os.path.join(OUT, f))
     fd = os.path.join(OUT, "fonts"); os.makedirs(fd, exist_ok=True)
     src = os.environ.get("FONTSRC", "/home/claude/fontsrc/node_modules/@fontsource/")
