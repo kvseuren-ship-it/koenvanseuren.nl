@@ -180,7 +180,7 @@ WORK = [
          "Лука Бётцель произносит свидетельство человека, который точно знает: они здесь. Постепенно оказывается, что инопланетная правда лежит гораздо ближе — в утрате, бездомности и классе. Взгляд в голову конспиролога и под капот нашего общества.",
          "Спектакль шёл на передвижном театральном фестивале De Parade в Гааге, Амстердаме и Утрехте (лето 2026), начиная с Гааги — с аншлагами каждый вечер. Рецензия Хана ван Виринге в <em>De Groene Amsterdammer</em>."]},
  "credits": [["spel", "Luca Bötzel"], ["tekst & regie", "Koen van Seuren"], ["licht", "Wout Panis"], ["dramaturgie", "Luna Joosten"], ["artistieke begeleiding", "Ellen Goemans"], ["foto's", "Niels “Knelis” Meijer"]],
- "quotes": [["De tekst is op een fascinerende wijze ontregelend.", "Jos Schuring, Scènes"], ["Een speler met lef.", "Jos Schuring, Scènes, over Luca Bötzel"]],
+ "quotes": [["Een grappige en verdrietige karakterstudie van een man op de rand van zijn afgrond.", "Han van Wieringen, De Groene Amsterdammer"], ["De tekst is op een fascinerende wijze ontregelend.", "Jos Schuring, Scènes"], ["Bötzel is een knap speler, transparant, innemend.", "Han van Wieringen, De Groene Amsterdammer"]],
  "imgs": ["wzna-1", "wzna-2", "wzna-3", "wzna-4", "wzna-5"], "photo": "Niels “Knelis” Meijer",
 },
 {
