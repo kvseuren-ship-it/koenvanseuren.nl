@@ -201,5 +201,7 @@ h1,h2,.home .quote,blockquote,.lightbox button{color:var(--red)}
 .top nav a[aria-current]{background:var(--red);color:var(--paper)}
 /* linkerfoto op home: middentonen en schaduwen openen vóór de duotoon */
 .home-img:not(:hover) img.duo{filter:brightness(1.2) contrast(.88) url(#duo)}
+/* donkere toneelfoto's van We zijn niet alleen: schaduwen openen vóór de duotoon */
+img.duo[src*="wzna-"]{filter:brightness(1.35) contrast(.85) url(#duo)}
 
 @media print{.info,.top,.lightbox,.hero{display:none}img.duo{filter:none}}

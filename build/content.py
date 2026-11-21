@@ -178,7 +178,7 @@ WORK = [
          "Спектакль шёл на передвижном театральном фестивале De Parade в Гааге, Амстердаме и Утрехте (лето 2026), начиная с Гааги — с аншлагами каждый вечер. Рецензия Хана ван Виринге в <em>De Groene Amsterdammer</em>."]},
  "credits": [["spel", "Luca Bötzel"], ["tekst & regie", "Koen van Seuren"], ["licht", "Wout Panis"], ["dramaturgie", "Luna Joosten"], ["artistieke begeleiding", "Ellen Goemans"], ["foto's", "Niels “Knelis” Meijer"]],
  "quotes": [["Een grappige en verdrietige karakterstudie van een man op de rand van zijn afgrond.", "Han van Wieringen, De Groene Amsterdammer"], ["De tekst is op een fascinerende wijze ontregelend.", "Jos Schuring, Scènes"], ["Bötzel is een knap speler, transparant, innemend.", "Han van Wieringen, De Groene Amsterdammer"]],
- "imgs": ["wzna-1", "wzna-2", "wzna-3", "wzna-4", "wzna-5"], "photo": "Niels “Knelis” Meijer",
+ "imgs": ["wzna-1", "wzna-2", "wzna-3", "wzna-4", "wzna-5", "wzna-6", "wzna-7", "wzna-8", "wzna-9", "wzna-10", "wzna-11", "wzna-12", "wzna-13", "wzna-14", "wzna-15", "wzna-16", "wzna-17", "wzna-18", "wzna-19"], "photo": "Niels “Knelis” Meijer",
 },
 {
  "slug": "bosch-parade-2026", "year": "2026", "title": "Bosch Parade 2026",
@@ -384,4 +384,4 @@ HOME_LEAD_SRC = {
 }
 
 # Hoeveel beelden per productie maximaal meedoen in de wisselende rij op home
-POOL_LIMIT = {"bosch-parade-2026": 2, "bosch-parade-2024": 1}
+POOL_LIMIT = {"bosch-parade-2026": 2, "bosch-parade-2024": 1, "we-zijn-niet-alleen": 5}
